@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TD9QLD5LkYke/YcMw4Y/lmTc5mlR9WL5t5MCI9CVBZcLRxTaFh9YRyrwL2kMD+aewAOpMBnTCHhiS9mVxOKT+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shane\\Desktop\\Projects\\C# Tutorials\\CSharp Tutorial\\CSharp Tutorial\\CSharp Tutorial.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shane\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
