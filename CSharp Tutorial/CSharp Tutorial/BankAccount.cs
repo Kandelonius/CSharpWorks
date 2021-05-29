@@ -66,5 +66,19 @@ namespace CSharp_Tutorial
             Console.WriteLine($"Withdrew {amount} to account #{this.Number}\nnew balance is {this.Balance}");
         }
 
+        public string GetAccountHistory()
+        {
+            var report = new StringBuilder();
+
+            //Header
+            report.AppendLine("Date \t Amount \t Note");
+            foreach (var item in allTransactions)
+            {
+                //Rows
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+            }
+            return report.ToString();
+        }
+
     }
 }
