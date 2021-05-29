@@ -9,6 +9,8 @@ namespace CSharp_Tutorial
         {
             List<int> start = new List<int> { 1, 1 };
             Fibonacci.forLoopFib(start);
+
+            BankClass.Bank();
         }
     }
 }
