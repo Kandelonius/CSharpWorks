@@ -8,12 +8,11 @@ namespace CSharp_Tutorial
     {
         public static void Bank()
         {
-            var account = new BankAccount("Warbuks", 6174);
-            Console.WriteLine($"\nAccount for {account.Owner} created with a starting balance of ${account.Balance}");
+            var account = new BankAccount("Warbucks", 6173);
+            Console.WriteLine($"\nAccount for {account.Owner} created with Account #{account.Number}");
+            account.MakeWithdrawal(100, DateTime.Now, "Withdrawing $100");
         }
 
     }
 
 }
-
-
