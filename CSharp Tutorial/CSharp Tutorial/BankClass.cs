@@ -11,6 +11,10 @@ namespace CSharp_Tutorial
             var account = new BankAccount("Warbucks", 6173);
             Console.WriteLine($"\nAccount for {account.Owner} created with Account #{account.Number}");
             account.MakeWithdrawal(100, DateTime.Now, "Withdrawing $100");
+            account.MakeWithdrawal(100, DateTime.Now, "Withdrawing $100");
+            account.MakeWithdrawal(250, DateTime.Now, "Withdrawing $100");
+            account.MakeWithdrawal(100, DateTime.Now, "Withdrawing $100");
+            account.MakeWithdrawal(100, DateTime.Now, "Withdrawing $100");
 
             Console.WriteLine(account.GetAccountHistory());
 

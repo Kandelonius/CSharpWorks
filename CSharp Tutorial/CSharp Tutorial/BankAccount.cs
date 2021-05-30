@@ -25,7 +25,7 @@ namespace CSharp_Tutorial
 
         private static int accountNumberSeed = 1234567890; // starting account number for new users
 
-        private List<Transaction> allTransactions = new List<Transaction>();
+        private List<Transaction> allTransactions = new List<Transaction>(); // it looks like C# supports hoisting
 
         public BankAccount(string name, decimal initialBalance)
         {
