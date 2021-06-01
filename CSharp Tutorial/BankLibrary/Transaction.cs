@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharp_Tutorial
+namespace BankLibrary
 {
     public class Transaction
     {

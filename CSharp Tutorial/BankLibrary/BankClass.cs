@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharp_Tutorial
+namespace BankLibrary
 {
-    class BankClass
+    public class BankClass
     {
         public static void Bank()
         {
