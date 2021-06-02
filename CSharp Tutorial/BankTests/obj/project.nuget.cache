@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9v7au1RSTxkG7sE33QiW2/Ifh1+fpVzjqEEKxX17ziTTg6MRFnXDFCdrhSStUP7rVVAuFAV0o3LQVZuXxCdScg==",
+  "dgSpecHash": "V3HU+PW5c/1NHaJDaCPKQPkurZrClYLCtjPD+oLLoo6B3qF5z0DoYIfMcdKvV3vxASvTDflNgOmdkjBHuzSMjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shane\\Desktop\\Projects\\C# Tutorials\\CSharp Tutorial\\BankTests\\BankTests.csproj",
   "expectedPackageFiles": [
@@ -54,8 +54,7 @@
     "C:\\Users\\Shane\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
     "C:\\Users\\Shane\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
     "C:\\Users\\Shane\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
-    "C:\\Users\\Shane\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512",
-    "C:\\Users\\Shane\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\Shane\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
