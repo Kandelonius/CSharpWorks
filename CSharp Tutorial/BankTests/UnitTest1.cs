@@ -22,6 +22,7 @@ namespace BankTests
             );
 
         }
+
         [Fact]
         public void CanWithdrawValid()
         {
@@ -29,6 +30,7 @@ namespace BankTests
             account.MakeWithdrawal(1000, DateTime.Now, "Attempt to withdraw");
             Assert.True(account.Balance == 5173);
         }
+
         [Fact]
         public void CannotStartNegativeAccount()
         {
