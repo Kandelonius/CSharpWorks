@@ -2,9 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Humanizer.Core/2.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        }
+      },
       "BankLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Humanizer.Core": "2.10.1"
+        },
         "compile": {
           "bin/placeholder/BankLibrary.dll": {}
         },
@@ -15,6 +27,22 @@
     }
   },
   "libraries": {
+    "Humanizer.Core/2.10.1": {
+      "sha512": "A68teQ7Jo2+/7iCc5+KxUvyxpBjbJus6vDeN8TFP18HUEOsJCJ2A2eXo28bjecu+sNndFukU+tPFskVdhIu0tw==",
+      "type": "package",
+      "path": "humanizer.core/2.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.10.1.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
+      ]
+    },
     "BankLibrary/1.0.0": {
       "type": "project",
       "path": "../BankLibrary/BankLibrary.csproj",

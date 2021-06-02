@@ -1,12 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Humanizer;
 
 namespace BankLibrary
 {
     public class Transaction
     {
         public decimal Amount { get; }
+
+        public string ReadableAmount
+        {
+            get
+            {
+                return ((int)Amount).ToWords();
+            }
+        }
         public DateTime Date { get; }
         public string Notes { get; }
 

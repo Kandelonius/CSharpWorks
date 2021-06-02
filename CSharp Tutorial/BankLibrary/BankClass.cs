@@ -16,7 +16,7 @@ namespace BankLibrary
 
             Console.WriteLine(account.GetAccountHistory());
 
-            //// Test that the initial balances must be positive.
+            //// Test that the initial balances must be positive. Commented and left in for refreence
             //BankAccount invalidAccount;
             //try
             //{
