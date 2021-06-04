@@ -4,7 +4,6 @@ C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin\Release\netcoreapp3.1\CSharp Tutorial.runtimeconfig.dev.json
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin\Release\netcoreapp3.1\CSharp Tutorial.dll
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin\Release\netcoreapp3.1\CSharp Tutorial.pdb
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.csprojAssemblyReference.cache
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.AssemblyInfoInputs.cache
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.AssemblyInfo.cs
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.dll
@@ -15,3 +14,4 @@ C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.csproj.CopyComplete
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\bin\Release\netcoreapp3.1\Humanizer.dll
 C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.csproj.CoreCompileInputs.cache
+C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\CSharp Tutorial\obj\Release\netcoreapp3.1\CSharp Tutorial.csproj.AssemblyReference.cache

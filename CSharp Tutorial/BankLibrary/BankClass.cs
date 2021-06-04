@@ -41,6 +41,13 @@ namespace BankLibrary
 
             account.MakeWithdrawal(50, DateTime.Now, "small withdrawal");
             Console.WriteLine(account.GetAccountHistory());
+
+            AccountType noAccount = new AccountType("nothing");
+
+            Savings savings = new Savings("Savings");
+
+            Console.WriteLine(noAccount.greeting());
+            Console.WriteLine(savings.greeting());
         }
 
     }
