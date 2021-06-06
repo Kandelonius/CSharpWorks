@@ -45,9 +45,11 @@ namespace BankLibrary
             AccountType noAccount = new AccountType("nothing");
 
             Savings savings = new Savings("Savings");
+            Checking checking = new Checking("Checking");
 
             Console.WriteLine(noAccount.greeting());
             Console.WriteLine(savings.greeting());
+            Console.WriteLine(checking.greeting());
         }
 
     }
