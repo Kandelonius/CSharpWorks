@@ -70,7 +70,7 @@ namespace DataType
 
             MyClass obj = new MyClass();
 
-            
+
 
             Console.WriteLine(obj.number);//0
             Console.WriteLine("-----------------------");

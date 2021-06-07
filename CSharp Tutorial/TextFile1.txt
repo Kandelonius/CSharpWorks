@@ -1,0 +1,53 @@
+
+C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
+
+C# Programing Language with .NET Framework:-
+C# 1.0 Year 2002 .NET Framework 1.0 + IDE -2002
+C# 9.0 Year 2021 .NET Framework 4.8 IDE -2019
+
+Age Of C# Programing Language= 19+ years
+
+CLR - Common Language Runtime
+MSIL - Microsoft Intermediate Language
+.dll- Dynamic Link Library - It does not contain Main method.
+.exe- Executable File - It contains Main method.
+JIT - Just In Time 
+Compile Time
+Run Time 
+CTS - Common Type System 
+CLS - Common Language Specification
+
+C# Source Code:-CLR-MSIL(.dll,.exe)-JIT-Native(Machine) code-OS-Run
+
+using System;
+namespace MyNamespace
+{  
+    class MyClass
+	{
+	  static void Main()
+	  {
+	     Console.WrtieLine("Hello C# Program");
+		 
+		 Console.ReadKey();
+	  }
+	   
+	}
+}
+
+--------Microsoft Journey In IT-----------------------------------------
+1-Console Application - To Learn C#
+2-Windows Application or Desktop Application(.exe)
+3-Web Application - Goal 
+4-Mobile Apps - Xamarin
+5-Web API 
+6-Game Application etc.
+
+-----------------------------------------------------------------------------
+
+Namespace:- It's collection of namesapces,classes,struct,enum,delegate,interface etc.- PacalCase
+Method - It's a set of statement which perform a specific task.
+Class Members:- Field(camelCase),Property,Methods(PascalCase).
+Variable :- It's a container which contains the value. 
+Data Type:- It's define the type of data.
+Class:- It will be represent by the object. Class is a container which contains the members.
+Object :- It represents the class.
