@@ -31,7 +31,7 @@ namespace DataType
 
 
 
-        static void Main()
+        public static void Lecture()
         {
             //Pre-Define OR Buit-In Data Types in C#    
             //int,double,char,bool,string,object etc.            
@@ -68,10 +68,25 @@ namespace DataType
             //How to create the instance of class
             //ClassName objectName=new ClassName();
 
+            /*
+             * Var Keyword
+             * 
+             * 1. Whenever you declare var you must assign a value to it
+             * 2. Var cannot be assigned a Null value
+             * 3. When var is assigned a value it will be stored as a data type
+             * 4. When it is assigned as a data type it will behave as an original data type
+             * 5. You can use var as a local variable
+             * 6. Can't declare var as a class level variable or parameterized variable
+             * 7. Can't use var as a return type
+             */
+
             MyClass obj = new MyClass();
 
+            var o = 100;
+            o = 150;
+            o = (int)(double)15.5;
 
-
+            Console.WriteLine(0);
             Console.WriteLine(obj.number);//0
             Console.WriteLine("-----------------------");
             Console.WriteLine(obj.name);//null
