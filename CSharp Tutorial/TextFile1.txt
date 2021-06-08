@@ -51,3 +51,81 @@ Variable :- It's a container which contains the value.
 Data Type:- It's define the type of data.
 Class:- It will be represent by the object. Class is a container which contains the members.
 Object :- It represents the class.
+
+//Pre-Define OR Buit-In Data Types in C#    
+            //int,double,char,bool,string,object etc.            
+
+            //User - Defined Data Type in C#
+            //class,object,array,delegate,interface,struct,enum,etc.
+
+
+            //Value Type
+            //int,double,char,bool,struct,enum etc.
+            //It has default value 0.
+            //Value type will be stored on Stack memory.
+            //No GC required.
+
+
+            //Reference Type
+            //string,object,class,object,array,delegate,interface, etc.
+            //It has default value null.
+            //Referece type value will be stored on heap but reference will be stored stack.
+            //GC is required to do the memory mamangement.
+
+
+
+            //Console.WriteLine(i);
+            //Console.WriteLine(name);
+
+            //Class vs Object
+
+            //India(Class)                         USA(Class)
+            //Shri Narendra Modi(object)           Biden(object)
+
+            //Class Members(field,Property,Method(non-static(object))(Static(class)))
+
+            //How to create the instance of class
+            //ClassName objectName=new ClassName();
+
+            /*
+             * Var Keyword:
+             * 
+             * 1. Whenever you declare var you must assign a value to it
+             * 2. Var cannot be assigned a Null value
+             * 3. When var is assigned a value it will be stored as a specific data type
+             * 4. When it is assigned as a data type it will behave like that data type
+             * 5. You can use var as a local variable
+             * 6. Can't declare var as a class level variable or parameterized variable
+             * 7. Can't use var as a return type in a method declaration
+             * 
+             * Conversions:
+             * 
+             * 1. Implicit Conversion -
+             * A. When converting lower precision values into higher precision values it's called conversion
+             * B. No type casting is required *example: sbyte can be converted to short
+             * C. No data loss
+             * 
+             * 2. Explicit Conversion -
+             * A. converting higher precision values to lower precision values is known as explicit conversion
+             * B. Must type cast
+             * C. Possibility of data loss
+             * 
+             * Boxing and Unboxing:
+             * 
+             * 1. Boxing -
+             * A. Converting value type into an object type
+             * B. No type casting is required
+             * 
+             * 2. Unboxing -
+             * A. Converting an object into a value type
+             * B. Typecasting is required
+             * 
+             * Const and ReadOnly
+             * 
+             * 1. Const -
+             * A. Cannot be changed after it is declared
+             * B. A value must be given when a const is declared
+             * 
+             * 2. ReadOnly -
+             * A. Only can be changed in the constructor
+             */
