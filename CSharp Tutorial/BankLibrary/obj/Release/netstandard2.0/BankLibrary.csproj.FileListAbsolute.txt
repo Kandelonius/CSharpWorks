@@ -1,9 +1,0 @@
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\bin\Release\netstandard2.0\BankLibrary.deps.json
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\bin\Release\netstandard2.0\BankLibrary.dll
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\bin\Release\netstandard2.0\BankLibrary.pdb
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.AssemblyInfoInputs.cache
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.AssemblyInfo.cs
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.dll
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.pdb
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Shane\Desktop\Projects\C# Tutorials\CSharp Tutorial\BankLibrary\obj\Release\netstandard2.0\BankLibrary.csproj.AssemblyReference.cache
