@@ -14,7 +14,8 @@ namespace CSharp_Tutorial
 
             //BankClass.Bank();
 
-            SollersAssignments.Reverse();
+            //SollersAssignments.Reverse();
+            SollersAssignments.ValidNumber();
             Console.ReadKey();
         }
     }
