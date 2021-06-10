@@ -11,7 +11,7 @@ CLR - Common Language Runtime
 MSIL - Microsoft Intermediate Language
 .dll- Dynamic Link Library - It does not contain Main method.
 .exe- Executable File - It contains Main method.
-JIT - Just In Time 
+JIT - Just In Time - compiler, it translates native C# code to machine code
 Compile Time
 Run Time 
 CTS - Common Type System 
@@ -52,159 +52,153 @@ Data Type:- It's define the type of data.
 Class:- It will be represent by the object. Class is a container which contains the members.
 Object :- It represents the class.
 
-//Pre-Define OR Buit-In Data Types in C#    
-            //int,double,char,bool,string,object etc.            
+            Pre-Define OR Buit-In Data Types in C#    
+            int,double,char,bool,string,object etc.            
 
-            //User - Defined Data Type in C#
-            //class,object,array,delegate,interface,struct,enum,etc.
+            User - Defined Data Type in C#
+            class,object,array,delegate,interface,struct,enum,etc.
 
+            Value Type -
+            int,double,char,bool,struct,enum etc.
+            It has default value 0.
+            Value type will be stored on Stack memory.
+            No GC required.
 
-            //Value Type
-            //int,double,char,bool,struct,enum etc.
-            //It has default value 0.
-            //Value type will be stored on Stack memory.
-            //No GC required.
+            Reference Type -
+            string,object,class,object,array,delegate,interface, etc.
+            It has default value null.
+            Referece type value will be stored on heap but reference will be stored stack.
+            GC is required to do the memory mamangement.
 
+            Console.WriteLine(i);
+            Console.WriteLine(name);
 
-            //Reference Type
-            //string,object,class,object,array,delegate,interface, etc.
-            //It has default value null.
-            //Referece type value will be stored on heap but reference will be stored stack.
-            //GC is required to do the memory mamangement.
+            Class vs Object
 
+            India(Class)                         USA(Class)
+            Shri Narendra Modi(object)           Biden(object)
 
+            Class Members(field,Property,Method(non-static(object))(Static(class)))
 
-            //Console.WriteLine(i);
-            //Console.WriteLine(name);
-
-            //Class vs Object
-
-            //India(Class)                         USA(Class)
-            //Shri Narendra Modi(object)           Biden(object)
-
-            //Class Members(field,Property,Method(non-static(object))(Static(class)))
-
-            //How to create the instance of class
-            //ClassName objectName=new ClassName();
-
-            /*
-             * Var Keyword:
-             * 
-             * 1. Whenever you declare var you must assign a value to it
-             * 2. Var cannot be assigned a Null value
-             * 3. When var is assigned a value it will be stored as a specific data type
-             * 4. When it is assigned as a data type it will behave like that data type
-             * 5. You can use var as a local variable
-             * 6. Can't declare var as a class level variable or parameterized variable
-             * 7. Can't use var as a return type in a method declaration
-             * 
-             * Conversions:
-             * 
-             * 1. Implicit Conversion -
-             * A. When converting lower precision values into higher precision values it's called conversion
-             * B. No type casting is required *example: sbyte can be converted to short
-             * C. No data loss
-             * 
-             * 2. Explicit Conversion -
-             * A. converting higher precision values to lower precision values is known as explicit conversion
-             * B. Must type cast
-             * C. Possibility of data loss
-             * 
-             * Boxing and Unboxing:
-             * 
-             * 1. Boxing -
-             * A. Converting value type into an object type
-             * B. No type casting is required
-             * 
-             * 2. Unboxing -
-             * A. Converting an object into a value type
-             * B. Typecasting is required
-             * 
-             * Const and ReadOnly
-             * 
-             * 1. Const -
-             * A. Cannot be changed after it is declared
-             * B. A value must be given when a const is declared
-             * 
-             * 2. ReadOnly -
-             * A. Only can be changed in the constructor
-             */
+            How to create the instance of class
+            ClassName objectName=new ClassName();
+            
+              Var Keyword:
+              
+              1. Whenever you declare var you must assign a value to it
+              2. Var cannot be assigned a Null value
+              3. When var is assigned a value it will be stored as a specific data type
+              4. When it is assigned as a data type it will behave like that data type
+              5. You can use var as a local variable
+              6. Can't declare var as a class level variable or parameterized variable
+              7. Can't use var as a return type in a method declaration
+              
+              Conversions:
+              
+              1. Implicit Conversion -
+              A. When converting lower precision values into higher precision values it's called conversion
+              B. No type casting is required example: sbyte can be converted to short
+              C. No data loss
+              
+              2. Explicit Conversion -
+              A. converting higher precision values to lower precision values is known as explicit conversion
+              B. Must type cast
+              C. Possibility of data loss
+              
+              Boxing and Unboxing:
+              
+              1. Boxing -
+              A. Converting value type into an object type
+              B. No type casting is required
+              
+              2. Unboxing -
+              A. Converting an object into a value type
+              B. Typecasting is required
+              
+              Const and ReadOnly
+              
+              1. Const -
+              A. Cannot be changed after it is declared
+              B. A value must be given when a const is declared
+              
+              2. ReadOnly -
+              A. Can only be changed in the constructor
 
 -------------------------------------------8th June 2021---------------------------------------------------------
-//Operators in C#:-
-            //1-Arithmetic Operator +,-,*,/,%
-            //2-Assignment Opeartor =
-            //3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
-            //4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
-            //5-Logical Operator &&(AND),||(OR),!(NOT)
-            //6-Ternary Operator conditon?true:false;
+Operators in C#:-
+            1-Arithmetic Operator +,-,*,/,%
+            2-Assignment Opeartor =
+            3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
+            4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+            5-Logical Operator &&(AND),||(OR),!(NOT)
+            6-Ternary Operator /? conditon?true:false;
 
-            //1-Arithmetic Operator +,-,*,/,%
+            1-Arithmetic Operator +,-,*,/,%
 
-            //int i = 20, j = 10;
-
-            //Console.WriteLine(i + j);//20=10=30
-            //Console.WriteLine(i - j);//20-10=10
-            //Console.WriteLine(i * j);//20*10=200
-            //Console.WriteLine(i / j);//20/10=2
-            //Console.WriteLine(i % j);//20%10=0
-
-            //2-Assignment Opeartor =
-            int k = 200;
-
-            //3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
-            int l = 20;
-
-            //Console.WriteLine(l++);//20
-            //Console.WriteLine(++l);//21+1=22
-            //Console.WriteLine(l++);//22
-            //Console.WriteLine(l++);//23
-            //Console.WriteLine(l);//24
-
-            //Console.WriteLine(--l);//20-1=19
-            //Console.WriteLine(l--);//19
-            //Console.WriteLine(l--);//19-1=18
-            //Console.WriteLine(--l);//20//16//18-2=16
-
-            //4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
-            //int i = 20, j = 10;
-
-            //Console.WriteLine(i > j);//true
-            //Console.WriteLine(i < j);//false
-            //Console.WriteLine(i >= j);//true
-            //Console.WriteLine(i <=j);//false
-            //Console.WriteLine(i == j);//false
-            //Console.WriteLine(i != j);//true
-
-            //5-Logical Operator &&(AND),||(OR),!(NOT)
-            //&& (AND) 1-If both condition is true then it will return true.
-            //2-If first condtion is false it will not check second condition and it will return false.
-            //3-If first condition is true then it will check second condition and it second condition is true 
-            //then it will return true otherwise it will return false.
             int i = 20, j = 10;
 
-            //Console.WriteLine(i > j && j < i);//true
-            //Console.WriteLine(i < j && j != i);//false
-            //Console.WriteLine(i == j && j > i);//false
-            //Console.WriteLine(i != j && j < i);//true
+            Console.WriteLine(i + j);20=10=30
+            Console.WriteLine(i - j);20-10=10
+            Console.WriteLine(i * j);20 * 10=200
+            Console.WriteLine(i / j);20/10=2
+            Console.WriteLine(i % j);20%10=0
 
-            //|| (OR) 1-If first condition is true then it will not check second condition and it will return true.
-            //2-If first condition is false then it will check second condition and if second condition is true  
-            //then it will return true.
-            //3-If both condition is false then only it will return false.
+            2-Assignment Opeartor =
+            int k = 200;
 
-            //Console.WriteLine(i > j || j < i);//true
-            //Console.WriteLine(i < j || j != i);//true
-            //Console.WriteLine(i == j || j > i);//false
-            //Console.WriteLine(i != j || j < i);//true
+            3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
+            int l = 20;
 
-            //! (Not)
-            //Console.WriteLine(!(i > j || j < i));//true//false
-            //Console.WriteLine(!(i < j || j != i));//true//false
-            //Console.WriteLine(!(i == j || j > i));//false//true
-            //Console.WriteLine(!(i != j || j < i));//true//false
+            Console.WriteLine(l++);20
+            Console.WriteLine(++l);21+1=22
+            Console.WriteLine(l++);22
+            Console.WriteLine(l++);23
+            Console.WriteLine(l);24
 
-            //6-Ternary Operator conditon?true:false;
+            Console.WriteLine(--l);20-1=19
+            Console.WriteLine(l--);19
+            Console.WriteLine(l--);19-1=18
+            Console.WriteLine(--l);201618-2=16
+
+            4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+            int i = 20, j = 10;
+
+            Console.WriteLine(i > j);true
+            Console.WriteLine(i < j);false
+            Console.WriteLine(i >= j);true
+            Console.WriteLine(i <=j);false
+            Console.WriteLine(i == j);false
+            Console.WriteLine(i != j);true
+
+            5-Logical Operator &&(AND),||(OR),!(NOT)
+            && (AND) 1-If both condition is true then it will return true.
+            2-If first condtion is false it will not check second condition and it will return false.
+            3-If first condition is true then it will check second condition and it second condition is true 
+            then it will return true otherwise it will return false.
+            int i = 20, j = 10;
+
+            Console.WriteLine(i > j && j < i);true
+            Console.WriteLine(i < j && j != i);false
+            Console.WriteLine(i == j && j > i);false
+            Console.WriteLine(i != j && j < i);true
+
+            || (OR) 1-If first condition is true then it will not check second condition and it will return true.
+            2-If first condition is false then it will check second condition and if second condition is true  
+            then it will return true.
+            3-If both condition is false then only it will return false.
+
+            Console.WriteLine(i > j || j < i);true
+            Console.WriteLine(i < j || j != i);true
+            Console.WriteLine(i == j || j > i);false
+            Console.WriteLine(i != j || j < i);true
+
+            ! (Not)
+            Console.WriteLine(!(i > j || j < i));truefalse
+            Console.WriteLine(!(i < j || j != i));truefalse
+            Console.WriteLine(!(i == j || j > i));falsetrue
+            Console.WriteLine(!(i != j || j < i));truefalse
+
+            6-Ternary Operator conditon?true:false;
 
             int result = !(i == j || j > i) ? 500 : 1000;
 
@@ -223,3 +217,6 @@ Loops in C#
     a. initialization
     b. condition <, >, <=, >=
     c. increment or decrement to (to avoid infinite loop) ++, --
+
+    -------------------------------------------10th June 2021----------------------------
+
