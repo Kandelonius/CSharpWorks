@@ -28,6 +28,11 @@ namespace CSharp_Tutorial
             } while (index >= 1);
             Console.WriteLine($"reverse using do while is {reverseDoWhile} and the original input is {input}");
         }
+
+        public static void ValidNumber()
+        {
+
+        }
         
     }
 }
