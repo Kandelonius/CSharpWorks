@@ -15,7 +15,7 @@ namespace BankTests
         [Fact]
         public void CannotOverdraw()
         {
-            var account = new BankAccount("Warbucks", 6173);
+            var account = new BankAccount("Warbucks", 6174);
 
             Assert.Throws<InvalidOperationException>(
                 () => account.MakeWithdrawal(7500, DateTime.Now, "Attempt to overdraw")
@@ -26,9 +26,9 @@ namespace BankTests
         [Fact]
         public void CanWithdrawValid()
         {
-            var account = new BankAccount("Warbucks", 6173);
+            var account = new BankAccount("Warbucks", 6174);
             account.MakeWithdrawal(1000, DateTime.Now, "Attempt to withdraw");
-            Assert.True(account.Balance == 5173);
+            Assert.True(account.Balance == 5174);
         }
 
         [Fact]

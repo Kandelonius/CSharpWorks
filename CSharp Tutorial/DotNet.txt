@@ -1,3 +1,15 @@
+Questions to keep in mind -
+
+1-What is C#?
+2-What is JIT? and what is the role of JIT?
+3-Difference between readonly and const keyword?
+4-Difference between value type and reference type in C#?
+5-Difference between Implicit & Explicit Conversion?
+6-Difference between boxing and unboxing?
+7-What is operators in C#?
+8-What is the use of if else condition?
+9-Difference between if else and switch case  in C#?
+10-Difference between for loop and Foreach loop in C#?
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
@@ -14,8 +26,10 @@ MSIL - Microsoft Intermediate Language
 JIT - Just In Time - compiler, it translates native C# code to machine code
 Compile Time
 Run Time 
-CTS - Common Type System 
-CLS - Common Language Specification
+CTS - Common Type System - defines how types are declared, used and managed in the CLR and 
+      important for cross-language integration
+CLS - Common Language Specification - defines a set of features that are needed by many common
+      applications, and provides guidelines for .NET languages
 
 C# Source Code:-CLR-MSIL(.dll,.exe)-JIT-Native(Machine) code-OS-Run
 
@@ -27,10 +41,8 @@ namespace MyNamespace
 	  static void Main()
 	  {
 	     Console.WrtieLine("Hello C# Program");
-		 
 		 Console.ReadKey();
 	  }
-	   
 	}
 }
 
@@ -44,85 +56,77 @@ namespace MyNamespace
 
 -----------------------------------------------------------------------------
 
-Namespace:- It's collection of namesapces,classes,struct,enum,delegate,interface etc.- PacalCase
-Method - It's a set of statement which perform a specific task.
-Class Members:- Field(camelCase),Property,Methods(PascalCase).
-Variable :- It's a container which contains the value. 
-Data Type:- It's define the type of data.
-Class:- It will be represent by the object. Class is a container which contains the members.
+Namespace:- It's collection of namesapces,classes,struct,enum,delegate,interface etc.- (PascalCase)
+Method - A set of statements which perform a specific task
+Class Members:- Fields(camelCase),Properties,Methods(PascalCase)
+Variable :- It's a container which contains the value
+Data Type:- Defines the type of data
+Class:- It is represented by an object. Class is a container which contains its members
 Object :- It represents the class.
 
-            Pre-Define OR Buit-In Data Types in C#    
-            int,double,char,bool,string,object etc.            
+Pre-Defined OR Buit-In Data Types in C# - int,double,char,bool,string,object etc.            
 
-            User - Defined Data Type in C#
-            class,object,array,delegate,interface,struct,enum,etc.
+User Defined Data Types in C# - class,object,array,delegate,interface,struct,enum,etc.
 
-            Value Type -
-            int,double,char,bool,struct,enum etc.
-            It has default value 0.
-            Value type will be stored on Stack memory.
-            No GC required.
+Value Type - int,double,char,bool,struct,enum etc.
+  A. Has a default value of 0.
+  B. Value type will be stored in Stack memory.
+  C. No garbage collection required.
 
-            Reference Type -
-            string,object,class,object,array,delegate,interface, etc.
-            It has default value null.
-            Referece type value will be stored on heap but reference will be stored stack.
-            GC is required to do the memory mamangement.
+Reference Type - string,object,class,object,array,delegate,interface, etc.
+  A. Has a default value of null.
+  B. Referece type value is stored in heap memory but its reference is stored on the stack.
+  C. Garbage collection is required for memory mamangement.
 
-            Console.WriteLine(i);
-            Console.WriteLine(name);
+Class vs Object
 
-            Class vs Object
+India(Class)                         USA(Class)
+Shri Narendra Modi(object)           Biden(object)
 
-            India(Class)                         USA(Class)
-            Shri Narendra Modi(object)           Biden(object)
+Class Members(field,Property,Method(non-static(object))(Static(class)))
 
-            Class Members(field,Property,Method(non-static(object))(Static(class)))
-
-            How to create the instance of class
-            ClassName objectName=new ClassName();
+How to create an instance of a class
+   ClassName objectName = new ClassName();
             
-              Var Keyword:
+Var Keyword:
+   1. Whenever you declare var you must assign a value to it
+   2. Var cannot be assigned a Null value
+   3. When var is assigned a value it will be stored as a specific data type
+   4. When it is assigned as a data type it will behave like that data type
+   5. You can use var as a local variable
+   6. Can't declare var as a class level variable or parameterized variable
+   7. Can't use var as a return type in a method declaration
               
-              1. Whenever you declare var you must assign a value to it
-              2. Var cannot be assigned a Null value
-              3. When var is assigned a value it will be stored as a specific data type
-              4. When it is assigned as a data type it will behave like that data type
-              5. You can use var as a local variable
-              6. Can't declare var as a class level variable or parameterized variable
-              7. Can't use var as a return type in a method declaration
+Conversions:
               
-              Conversions:
+1. Implicit Conversion -
+   A. Converting lower precision values into higher precision values is called implicit conversion
+   B. No type casting is required *Example: sbyte can be converted to short
+   C. No data loss
               
-              1. Implicit Conversion -
-              A. When converting lower precision values into higher precision values it's called conversion
-              B. No type casting is required example: sbyte can be converted to short
-              C. No data loss
+2. Explicit Conversion -
+   A. converting higher precision values to lower precision values is known as explicit conversion
+   B. Must type cast
+   C. Possibility of data loss
               
-              2. Explicit Conversion -
-              A. converting higher precision values to lower precision values is known as explicit conversion
-              B. Must type cast
-              C. Possibility of data loss
+Boxing and Unboxing:
               
-              Boxing and Unboxing:
+1. Boxing -
+   A. Converting value type into an object type
+   B. No type casting is required
               
-              1. Boxing -
-              A. Converting value type into an object type
-              B. No type casting is required
+2. Unboxing -
+   A. Converting an object into a value type
+   B. Typecasting is required
               
-              2. Unboxing -
-              A. Converting an object into a value type
-              B. Typecasting is required
+Const and ReadOnly
               
-              Const and ReadOnly
+1. Const -
+   A. Cannot be changed after it is declared
+   B. A value must be given when a const is declared
               
-              1. Const -
-              A. Cannot be changed after it is declared
-              B. A value must be given when a const is declared
-              
-              2. ReadOnly -
-              A. Can only be changed in the constructor
+2. ReadOnly -
+   A. Can only be changed in the constructor
 
 -------------------------------------------8th June 2021---------------------------------------------------------
 Operators in C#:-
@@ -133,18 +137,16 @@ Operators in C#:-
             5-Logical Operator &&(AND),||(OR),!(NOT)
             6-Ternary Operator /? conditon?true:false;
 
-            1-Arithmetic Operator +,-,*,/,%
+1-Arithmetic Operator +,-,*,/,%
+   int i = 20, j = 10;
+   Console.WriteLine(i + j);20=10=30
+   Console.WriteLine(i - j);20-10=10
+   Console.WriteLine(i * j);20 * 10=200
+   Console.WriteLine(i / j);20/10=2
+   Console.WriteLine(i % j);20%10=0
 
-            int i = 20, j = 10;
-
-            Console.WriteLine(i + j);20=10=30
-            Console.WriteLine(i - j);20-10=10
-            Console.WriteLine(i * j);20 * 10=200
-            Console.WriteLine(i / j);20/10=2
-            Console.WriteLine(i % j);20%10=0
-
-            2-Assignment Opeartor =
-            int k = 200;
+2-Assignment Opeartor =
+   int k = 200;
 
             3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
             int l = 20;

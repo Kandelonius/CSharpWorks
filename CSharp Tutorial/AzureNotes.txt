@@ -1,0 +1,9 @@
+Questions to keep in mind -
+
+- What are different types of Data? explain?
+- Explain Storage LifeCycle of a Data?
+- What is maximum data you can store per Storage Account?
+- Types of Storage Accounts? Explain?
+- Explain Storage Account Properties?
+- Explain the types of Replication?
+- Types of Blob Storage?
