@@ -59,6 +59,7 @@ namespace CSharp_Tutorial
         /*
          * Write a program which takes three numbers from the console and displays the maximum of them.
          * My program allows the user to determine how many numbers will be compared.
+         * I also have some validation to ensure the numbers being passed in are actually numbers.
          */
         public static void MaxNum()
         {
@@ -101,6 +102,18 @@ namespace CSharp_Tutorial
                 }
             }
             Console.WriteLine($"The highest number of the {arrSize} numbers you provided was {max}");
+        }
+
+
+        /*
+         * Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder. 
+         * Display the count on the console.
+         * Again I will leave the max value up to the user.
+         */
+        public static void SumDivisibleByThree()
+        {
+            Console.WriteLine("Please enter a maximum number greater than 2 and I will determine how many numbers" +
+                " are divisible by 3 between 1 and the number you entered");
         }
         static Boolean ValidNumber(string usernum)
         {
