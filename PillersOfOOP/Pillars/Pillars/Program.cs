@@ -2,7 +2,7 @@
 
 namespace Pillars
 {
-    class PillarsMain
+    class PillarsMain //
     {
         static void Main(string[] args)
         {
