@@ -15,7 +15,8 @@ namespace CSharp_Tutorial
             //BankClass.Bank();
 
             //SollersAssignments.Reverse();
-            SollersAssignments.ValidNumber();
+            SollersAssignments.NumberInRange();
+            SollersAssignments.MaxNum();
             Console.ReadKey();
         }
     }
