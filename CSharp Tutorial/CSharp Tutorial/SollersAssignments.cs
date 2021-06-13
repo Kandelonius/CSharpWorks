@@ -113,8 +113,9 @@ namespace CSharp_Tutorial
          */
         public static void SumDivisibleByThree()
         {
-            Console.WriteLine("Please enter a maximum number greater than 2 and I will determine how many numbers" +
-                " are divisible by a number of your choosing between 1 and the number you entered");
+            Console.WriteLine("This program will determine how many numbers are divisible by a number of your " +
+                "choosing between 1 and the number you entered.");
+            Console.WriteLine("Please enter the maximum number.");
             string input = Console.ReadLine();
             Console.WriteLine("Now please enter a number you'd like to use as a divisor.");
             string input2 = Console.ReadLine();
@@ -139,7 +140,48 @@ namespace CSharp_Tutorial
                 }
             }
             Console.Write($"The total of all numbers divisible by {divisor} from 0 to {input} is {total}, and there are {count}" +
-                $" total numbers that are divisible by 3.");
+                $" total numbers that are divisible by {divisor}.");
+        }
+
+        /*
+         * Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console. 
+         * For example, if the user enters 5, the program should calculate 5 x 4 x 3 x 2 x 1 and display it as 5! = 120.
+         */
+        public static void FactorialCalculator()
+        {
+            Console.WriteLine($"Please enter a number that you would like to know the factorial value of.");
+            string input = Console.ReadLine();
+            int factorial = 1;
+            if(ValidNumber(input))
+            {
+                int number = Convert.ToInt32(input);
+                for (int i = 1; i <= number; i++)
+                {
+                    factorial *= i;
+                }
+            }
+            Console.WriteLine($"{input}! is {factorial}");
+        }
+
+        /*
+         * Write a program in C# Sharp to display the pattern like right angle triangle using an asterisk.
+         */
+        public static void DrawRightAngle()
+        {
+            Console.WriteLine("This program will output a right angle built of astrisks, please enter the amount of lines " +
+                "you would like it to have.");
+            string input = Console.ReadLine();
+            string angleLine = "";
+            if(ValidNumber(input))
+            {
+                int lines = Convert.ToInt32(input);
+                for(int i = 1; i <= lines; i++)
+                {
+                    angleLine += "*";
+                    Console.WriteLine(angleLine);
+                }
+            }
+
         }
 
         static Boolean ValidNumber(string usernum)
