@@ -14,8 +14,12 @@ namespace CSharp_Tutorial
 
             //BankClass.Bank();
 
-            //SollersAssignments.Reverse();
-            SollersAssignments.ValidNumber();
+            SollersAssignments.Reverse();
+            SollersAssignments.NumberInRange();
+            SollersAssignments.MaxNum();
+            SollersAssignments.SumDivisibleByThree();
+            SollersAssignments.FactorialCalculator();
+            SollersAssignments.DrawRightAngle();
             Console.ReadKey();
         }
     }
