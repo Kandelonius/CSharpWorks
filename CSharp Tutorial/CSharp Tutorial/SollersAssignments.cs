@@ -66,7 +66,7 @@ namespace CSharp_Tutorial
             Console.WriteLine("This program will compare numbers entered by a user and output the highest one.");
             Console.WriteLine("Please enter the amount of numbers you'd like to compare.");
             string input = Console.ReadLine();
-            int arrSize = Convert.ToInt32(input);
+            int arrSize = Convert.ToInt32(input); // I am not checking this number prior to converting it.
             int[] nums = new int[arrSize];
             int count = 0;
 
@@ -109,12 +109,39 @@ namespace CSharp_Tutorial
          * Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder. 
          * Display the count on the console.
          * Again I will leave the max value up to the user.
+         * I have also actually allowed the user to select the number to divide by.
          */
         public static void SumDivisibleByThree()
         {
             Console.WriteLine("Please enter a maximum number greater than 2 and I will determine how many numbers" +
-                " are divisible by 3 between 1 and the number you entered");
+                " are divisible by a number of your choosing between 1 and the number you entered");
+            string input = Console.ReadLine();
+            Console.WriteLine("Now please enter a number you'd like to use as a divisor.");
+            string input2 = Console.ReadLine();
+            int divisor = Convert.ToInt32(input2);
+            int total = 0;
+            int count = 0;
+            if(ValidNumber(input))
+            {
+                int number = Convert.ToInt32(input);
+                if(divisor > number)
+                {
+                    Console.WriteLine($"{divisor} is larger than {number} so there are no valid numbers in this set.");
+                    return;
+                }
+                for(int i = 1; i <= number; i++)
+                {
+                    if(i % divisor == 0)
+                    {
+                        total += i;
+                        count++;
+                    }
+                }
+            }
+            Console.Write($"The total of all numbers divisible by {divisor} from 0 to {input} is {total}, and there are {count}" +
+                $" total numbers that are divisible by 3.");
         }
+
         static Boolean ValidNumber(string usernum)
         {
             int userNumber;

@@ -17,6 +17,7 @@ namespace CSharp_Tutorial
             //SollersAssignments.Reverse();
             SollersAssignments.NumberInRange();
             SollersAssignments.MaxNum();
+            SollersAssignments.SumDivisibleByThree();
             Console.ReadKey();
         }
     }
