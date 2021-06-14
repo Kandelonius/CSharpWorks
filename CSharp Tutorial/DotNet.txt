@@ -227,5 +227,3 @@ Access Specifier in CSharp
 3-Protected - Derived class instance only can access protected members.
 4-Internal - Witing a assemble.
 5-Protected Internal - Derived class instance only can access protected members. + Witing a assemble. 
-
-
