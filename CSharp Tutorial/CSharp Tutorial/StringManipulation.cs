@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharp_Tutorial
 {
-    class StringManipulation
+    static class StringManipulation
     {
         public static string CapitalizeWord(string input)
         {
