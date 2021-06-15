@@ -227,3 +227,70 @@ Access Specifier in CSharp
 3-Protected - Derived class instance only can access protected members.
 4-Internal - Witing a assemble.
 5-Protected Internal - Derived class instance only can access protected members. + Witing a assemble. 
+
+----------------------------------------------11th June 2021------------------------
+1-Is C# is case sensitive programing language?
+2-What is the use of var keyword?
+3-Difference between while and do-while loop?
+4-What is access specifier in C-Sharp?
+5-What is the default access specifier of class and class members?
+6-Difference between .exe and .dll.
+7-What is Unary operator?
+8-What is namespace?
+9-What is non-static or instance method?
+10-Difference between static and non-static?
+
+----------------------------------------------------------------------------------------------
+Abstract Method in C-Sharp
+    1-If you would like to create a abstract method then class must be abstract class.
+    2-It does not mean that if you have define a abstract class then you will also have to
+    define abstract method.
+    3-You can't define the body of abstract method.
+    4-You can't define abstract method as a private method.
+    5-Inside the abstract class you can also define non-abstract method like non-static,static,virtual etc.
+    7-If you have define static method under the abstract class that method you can access with the abstract
+    class.
+    8-Accept static method you can't access any other method with abstract class because you can't create the
+    instance of abstract class.
+    9-If you would like to use the abstract method then you will have to use inhertiance it means you will
+    inherit abstract class with other class and then you will have to provide the body of all the abstract methods
+    into that inherited class. And when you will provide the body you will have to use 'override' keyword.
+
+-----------------------------------------14th June 2021---------------------------------------------------
+Extension Method in C#
+    1-When you will define a extesnion method then you will have to use static modifier.            
+    2-Extension method parameter must be passed 'this' keyword with the type.
+    3-Class must be static class.
+    4-Only the type have the rights to access this method.
+
+----------------------------------------------------------------------------------------------------------------------
+What is Constructor in CSharp?
+Ans:-Constructor is a special type of method. It does not contain return type,it has the same name
+as we have the class name. Every class has a default constructor. And default Constructor will be 
+called automatically whenever you will create the instance or object of the class. And the role of
+default constructor is to assign the default value to the class level fields.
+
+If you have normal class then it will get default constructor. If you have static class then it will
+get default static constructor and static constructor role is to assign the default value to static
+fields of the class. Only one static constructor you can define or by default it exist.
+
+Constructor Types in C#
+    1-Default Or Parameterless Constructor :- If you will not manually define the it will be called as
+    a default constructor but when you will create the parameterized then default constructor will be 
+    removed and if you would like to define default constructor then manually you will have to define it
+    and it will be parameterless constructor.
+    
+    2-Parameterized Constructor or Overload Constructor
+    
+    3-Copy Constructor
+    
+    4-Static Constructor -
+        A-If you will define static constructor you can't use access specifier.
+        B-You can define only one static constructor.
+        C-Static constructor must be parameterless constructor.
+        D-Static constructor will be called before the Main method.
+        E-Static constructor you can define under the static as well as non-static class.
+        F-Static has not any relation with the instance or object.
+        G-Static Constructor will assign the default value to the static fields of the class.
+    
+    5-Private Constructor

@@ -14,12 +14,15 @@ namespace CSharp_Tutorial
 
             //BankClass.Bank();
 
-            SollersAssignments.Reverse();
-            SollersAssignments.NumberInRange();
-            SollersAssignments.MaxNum();
-            SollersAssignments.SumDivisibleByThree();
-            SollersAssignments.FactorialCalculator();
-            SollersAssignments.DrawRightAngle();
+            //SollersAssignments.Reverse();
+            //SollersAssignments.NumberInRange();
+            //SollersAssignments.MaxNum();
+            //SollersAssignments.SumDivisibleByThree();
+            //SollersAssignments.FactorialCalculator();
+            //SollersAssignments.DrawRightAngle();
+            string name = "shane";
+            string caps = StringManipulation.CapitalizeWord(name);
+            Console.WriteLine(caps);
             Console.ReadKey();
         }
     }
