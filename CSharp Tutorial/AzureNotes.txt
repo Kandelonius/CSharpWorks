@@ -1,3 +1,5 @@
+Azure and cloud computing
+
 Questions to keep in mind -
 
 - What are different types of Data? explain?
@@ -7,3 +9,37 @@ Questions to keep in mind -
 - Explain Storage Account Properties?
 - Explain the types of Replication?
 - Types of Blob Storage?
+
+Deployment models -
+	public cloud - Azure, AWS IMB Cloud
+		a) services are stored off-site
+		b) can be accessed by the general public
+		c) all software, hardware and other infrastructure is owned by the cloud provider
+
+	private cloud - AWS, VMware
+		a) cloud infrastructure is used exclusively by a single organization
+		b) may be run privately or outsourced to a hosting company
+		c) services and infrastructure are mainained on a private network
+
+	hybrid cloud - Federal agencies opt for private cloud for sensitive information and public cloud for general consumption
+		a) contains elements of both public and private cloud
+
+Service models -
+	IAAS (Infrastructure as a service) - used by IT administrators
+		a) provides basic computing infrastructure
+		b) services are available on a Pay-for-use basis
+
+	PAAS (Platform as a service) - used by developers
+		a) provides cloud platforms and runtime environments for developing, testing and managing applications
+		b) allows developers to deploy applications without requiring all of the infrastructure
+
+	SAAS (Software as a service) - used by general users
+		a) cloud providers host and manage software on a Pay-for-use basis
+		b) fully managed by the cloud provider so the end user doesn't have to maintain anything
+
+Azure physical infrastructure hierarchy -
+	Region -
+	Availability zone -
+	Data center - used to host a group of network servers
+	
+https://docs.microsoft.com/en-us/azure/availability-zones/media/az-overview/az-graphic-two.png
