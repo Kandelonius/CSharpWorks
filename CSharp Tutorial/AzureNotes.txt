@@ -38,8 +38,54 @@ Service models -
 		b) fully managed by the cloud provider so the end user doesn't have to maintain anything
 
 Azure physical infrastructure hierarchy -
-	Region -
-	Availability zone -
-	Data center - used to host a group of network servers
-	
 https://docs.microsoft.com/en-us/azure/availability-zones/media/az-overview/az-graphic-two.png
+	Region - 
+		a) can contain multiple any number of data centers and availability zones and are globally distributed
+		b) currently about 60 regions globally
+		c) not all services are available in all regions - could be relevant when choosing a region to deploy to
+			* a good tool to test the fastest region for your location is https://azurespeedtest.azurewebsites.net/
+			* a tool to test which products are available in a region is https://azure.microsoft.com/en-us/global-infrastructure/services/
+
+	Availability zone - a collection of data centers with the purpose of allowing for back-ups for data centers
+
+	Data center - used to host a group of network servers with their own power, cooling and network infrastructure
+	
+Fault tolerance -
+	Proactive -
+		a) regularly backup data, apps, resources
+		b) deploy to multiple availability zones or regions
+		c) Load balance across multiple availibility zones or regions
+		d) monitor health of data, apps, resources
+	Reactive -
+		a) restore data, apps, resources to different availability zones
+		b) deploy to different availability zones or regions
+
+Desaster recovery - can use azure to restore
+	a) regularly backup data, apps, resources
+	b) on-prem to on-prem
+	c) on-prem to cloud
+	d) other cloud to Azure
+	e) Azure to Azure
+
+Scalability -
+	Scaling Out - non-disruptive aka doesn't require a reset
+		a) increase instance count of resources
+
+	Scaling up - disruptive aka requires a reset
+		a) Increase instance size of existing resources
+
+Elasticity - the ability to adapt to changing demands by scaling up, down, out, in
+
+Azure hierarchy for subscription is: Subscription - Azure Region - (Tenant, Resource group VM, Resource group Network)
+hierarchy for Active Directory is: Subscription - Azure Region - Tenant
+hierarchy for Virtual Machine is: Subscription - Azure Region - Resource group
+heirarchy for Virtual Network is: Subscription - Azure Region - Resource group
+hierarchy for Storage is: Subscription - Azure region - Resource group
+
+Major Azure service groups -
+	Compute - VM, VM Scale sets, Cloud services, contianers etc.
+	Networking - Virtual network, Azure DNS, Application gateway, Traffic manager etc.
+	Data and Storage - Disk storage, Blob storage, File storage, Queue storage, Table storage, StorSimple
+	Web and Mobile - Web apps, Mobile apps, Logic apps, Contend delivery network
+	Other Services - Azure AD, Site Recovery, Network watcher, Azure security center, etc.
+
