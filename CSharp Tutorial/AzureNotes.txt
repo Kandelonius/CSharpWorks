@@ -89,6 +89,41 @@ Major Azure service groups -
 	Web and Mobile - Web apps, Mobile apps, Logic apps, Contend delivery network
 	Other Services - Azure AD, Site Recovery, Network watcher, Azure security center, etc.
 
+Storage data types -
+	Structured data
+		1) well defined data such as data from a RDMS
+
+	Semi-structured data
+		1) not as defined as structured data - NOSQL data includes JSON formatted data and graphs
+
+	Unstructured data
+		1) not well organized, may have an internal structure but it is not know to us - image or video files
+
+Storage lifecycle -
+	Real time - caching, search, performance workloads, event processing
+		Replication requirements - low
+		Cost - high
+		Speed of access - high
+		Read / write mix - heavy R/W
+
+	Near time - compute, video, standard workloads
+		Replication requirements - low
+			Cost - high
+			Speed of access - medium
+			Read / write mix - balanced R/W
+
+	Long term - time-based, use-based, expiry based, size based
+		Replication requirements - medium
+		Cost - medium
+		Speed of access - low
+		Read / write mix - mostly read
+
+	Archive - backup, compliance
+		Replication requirements - high
+		Cost - low
+		Speed of access - low
+		Read / write mix - read on demand
+
 Azure Data lake service – Gen 2 (ADLS) is currently preferred
 	Designed for storage of big (unstructured) data
 	Supports massive volumes
@@ -96,7 +131,12 @@ Azure Data lake service – Gen 2 (ADLS) is currently preferred
 	Cost-effective
 	Provides HDFS compatible storage to analytics tools, including HDInsight, Hadoop etc.
 	Supports various management features including security, a hierarchical namespace and encryption
+
 Data Lake – Management and Security:
+	* differences between blob and ADLS- 
+		1) ADLS supports a true file system
+		2) ADLS supports hierarchical namespace
+
 	Blob storage functionality is still available
 		Access tie and lifecycle management
 		Global scale
