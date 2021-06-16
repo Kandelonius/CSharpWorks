@@ -89,3 +89,24 @@ Major Azure service groups -
 	Web and Mobile - Web apps, Mobile apps, Logic apps, Contend delivery network
 	Other Services - Azure AD, Site Recovery, Network watcher, Azure security center, etc.
 
+Azure Data lake service – Gen 2 (ADLS) is currently preferred
+	Designed for storage of big (unstructured) data
+	Supports massive volumes
+	Supports massive throughput
+	Cost-effective
+	Provides HDFS compatible storage to analytics tools, including HDInsight, Hadoop etc.
+	Supports various management features including security, a hierarchical namespace and encryption
+Data Lake – Management and Security:
+	Blob storage functionality is still available
+		Access tie and lifecycle management
+		Global scale
+	Security (including features from Blob storage
+Connectivity:
+•	…
+BlobFuse – open source project developed to provide a virtual file system backed by Azure Blob storage
+Uses libfuse open source library to communicate with the Linux FUSE kernel model and implements the file system operations using the Azure Storage Blob REST APIs
+-Features
+	Mount a Blob storage on Linux
+	Basic file system operations ie. Mkdir, opendir, readdir, rmdir, open, read, create, write, close, unlink, truncate, stat, rename
+	Local cache to improve subsequent access times
+Network File System(NFS) 3.0 –
