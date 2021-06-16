@@ -23,12 +23,17 @@ namespace CSharp_Tutorial
             //string name = "shane";
             //string caps = StringManipulation.CapitalizeWord(name);
             //Console.WriteLine(caps);
-            string[] methodText = { "tHiS", "iS", "a", "nice", "method", "namE" };
+            string[] methodText = { "tHiS", "iS", "a", "nice", "method", "namE", "from", "an", "array" };
             string[] variableText = { "tHiS", "iS", "a", "nice", "variable", "namE" };
+            string a = "aPplE", b = "baNana", c = "cherry";
             string methodName = StringManipulation.ToPascalCase(methodText);
             string variableName = StringManipulation.ToCamelCase(variableText);
+            string fruitMethodName = StringManipulation.ToPascalCase(a, b);
+            string fruitVariableName = StringManipulation.ToCamelCase(a, b, c);
             Console.WriteLine($"Here is your method name {methodName}");
             Console.WriteLine($"Here is your varible name {variableName}");
+            Console.WriteLine($"Here is your varible name {fruitMethodName}");
+            Console.WriteLine($"Here is your varible name {fruitVariableName}");
             Console.ReadKey();
         }
     }
