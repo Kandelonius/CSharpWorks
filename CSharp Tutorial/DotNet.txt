@@ -293,3 +293,235 @@ Constructor Types in C#
         G-Static Constructor will assign the default value to the static fields of the class.
     
     5-Private Constructor
+
+        --------------------------------------------15th June 2021----------------------------------------------
+    //Interface in CSharp
+    //1-Whenever you will create a interface just keep 'I' as prefix with the interface name. It does not
+    //mandatory but it is a part of naming convenstion which you shuld follow.
+    //2-You will use interface keyword to create the interface and interface will contain only property,method,
+    //delegate,events.
+    //3-You can only declare the members inside the interface. You can't provide the body.
+    //4-You can't use any access specifier with interface members because they are by default public.
+    //5-To access the members of interface, you will have to inherit interface with the class and that time
+    //you will have to provide the body of all the members of interface. 
+    //6-When you will provide the body of all the interface members that time you will have to use public
+    //as a access specifier otherwise it will be not treated as interface members.
+    //7-You can't create the instance of interface.
+  
+
+  -------------------------------------------------------------------------------------------------
+    //Array in CSharp
+        //1-Array is a reference type.
+        //2-Array is fixed in size.
+        //3-Array index will start with 0.
+        //4-Array max index will be 'size-1'.
+        //5-If is good if you would like to store same data types multiple value.
+        //6-It is type safe.
+
+        //Array Type in C#
+            //1-Single Dimensional Array 
+            //2-Multi Dimensional Array 
+            //3-Jagged Array 
+
+
+            //1-Single Dimensional Array 
+            int[] myFirstNumbers = new int[] { 1, 2, 3, 43, 5 };
+
+            //2-Multi Dimensional Array 
+            int[,] mySecondNumbers = new int[3, 2] { { 12, 22 }, { 223, 224}, { 422, 511 }};
+            //Console.WriteLine(mySecondNumbers[0,1]);
+            
+            //for (int i = 0; i < 3; i++)//rows
+            //{
+            //    for (int j = 0; j < 2; j++)//columns
+            //    {
+            //        Console.Write(mySecondNumbers[i,j]+" ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //3-Jagged Array 
+
+            int[][] myThirdNumbers = new int[2][];//0 1
+            myThirdNumbers[0]=new int[2] { 1, 2 };
+            myThirdNumbers[1] = new int[] { 2,4,5 };
+
+            Console.WriteLine(myThirdNumbers[1][1]);
+
+            int[][,] myFourthNumbers = new int[2][,];//0 1
+            myFourthNumbers[0] = new int[3,2] { { 12, 22 }, { 223, 224 }, { 422, 511 } };
+            myFourthNumbers[1] = new int[2,2] { { 12, 22 }, { 223, 224 }};
+
+---------------------------------------------------------------------------------------------------------
+  //Enum in C#
+    //1-It is value type and user define.
+    //2-To Declare the enum you will have to use 'enum' keyword.
+    //3-You can define it inside the namespace or inside the class.
+    //4-Enum default datat type is int.
+    //5-Enum will start by default with 0 and it will add +1 for next item.
+    //6-Enum will not allow any other data type except all int types.
+
+ ------------------------------------------------------------------------------------
+  //Class in CSharp
+    //1-It is reference type and user define type.
+    //2-It gets memory on heap.
+    //3-GC is required for clean up.
+    //4-You will have to use 'class' keyword to define class.
+    //5-It is good for large amount of data storage.
+    //6-All pre-define referece type derive from class.
+    //7-We can define parameter less constructor.    
+
+    //Struct In CSharp
+    //1-It is value type and user define type.
+    //2-It gets memory on stack.
+    //3-GC not required.
+    //4-You will have to use 'struct' keyword to define structure.
+    //5-It is good for small amount of data storage.
+    //6-All pre-define value type derive from struct.
+    //7-You can't define explicity parameterless constructor but internally 
+    //default constructor exist.
+    //8-Struct will also behave same like class with some limitation.
+
+-------------------------16th June 2021------------------------------------------
+ //1,2,3
+            int a = 1, b = 2, c = 3;
+
+            //1,2,3,4,5,...1000.
+            int[] myNumbers = new int[] { 1, 2, 3, 4, 5, 6, 1000 };
+
+            //1,"Sam",25,95000.00,'M'
+
+            //Collection in C#
+            //1-Non-Generic Collection Namespace:- System.Collections;
+            //A-ArrayList B-SortedList C-HashTable D-Stack E-Queue
+
+            //2-Generic Collection
+            //A-List<T> B-Dictionary<Tkey,Tvalue> C-SortedList<Tkey,Tvalue>
+            //D-HashSet<T> E-Stack<T> F-Queue<T>
+
+            //A-ArrayList
+
+            IList collection = new ArrayList();
+            collection.Add(10);
+            collection.Add(100);
+            collection.Add(1000);
+
+
+            var arrayList = new ArrayList();
+            //Console.WriteLine(arrayList.Capacity);//4
+            arrayList.Add(1);            
+            arrayList.Add("Sam");
+            arrayList.Add(25);
+            arrayList.Add(95000.00);            
+            arrayList.Add('M');
+            //arrayList.TrimToSize();
+
+
+            //Console.WriteLine(arrayList[2]);//25
+
+            //arrayList.AddRange(collection);
+
+            //Console.WriteLine(arrayList.Contains(10000));
+            arrayList.Insert(1, "Test");
+            //Console.WriteLine(arrayList.IndexOf("Test"));
+            arrayList.InsertRange(0, collection);
+
+            //arrayList.Remove("Test");
+            //arrayList.RemoveAt(3);
+            arrayList.RemoveRange(0, 3);
+
+            //Console.WriteLine("----------------");
+
+            //for (int i = 0; i < arrayList.Count; i++)
+            //{
+            //    Console.WriteLine(arrayList[i]);
+            //}
+
+            //Console.WriteLine("----------------");
+
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //B-SortedList
+            //1-Key should not be null.
+            //2-Key should not be duplicate.
+            //3-Value can be null as well as duplicate.
+            //--Only for Sorted List
+            //4-Key should of same data type.
+            
+
+            var sortList = new SortedList();
+            sortList.Add(1, "David");
+            sortList.Add(9, null);
+            sortList.Add(2, "David");
+            sortList.Add(8, "Kevin");
+            sortList.Add(3, null);
+
+            //Console.WriteLine(sortList[8]);
+
+
+            //foreach (var key in sortList.Keys)
+            //{
+            //    Console.WriteLine("Key is:"+key +" value is:"+ sortList[key]);
+            //}
+
+
+            //C - HashTable
+
+            var hashList = new Hashtable();
+            hashList.Add(1, "David");
+            hashList.Add("Anthony", null);
+            hashList.Add(2, "David");
+            hashList.Add(8, "Kevin");
+            hashList.Add("Divya", null);
+
+
+
+            //foreach (var key in hashList.Keys)
+            //{
+            //    Console.WriteLine("Key is:" + key + " value is:" + hashList[key]);
+            //}
+
+
+            //D-Stack LIFO - Last in First out
+
+            var stackList = new Stack();
+            stackList.Push(1);
+            stackList.Push("Sam");
+            stackList.Push(25);
+            stackList.Push(95000.00);
+            stackList.Push('M');
+
+            //Console.WriteLine(stackList.Peek());//M
+            //Console.WriteLine("-------------------");
+            //Console.WriteLine(stackList.Pop());//M
+            //Console.WriteLine("--------------------");
+
+            //foreach (var item in stackList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //E-Queue FIFO First in First out
+
+            var queueList = new Queue();
+            queueList.Enqueue(1);
+            queueList.Enqueue("Sam");
+            queueList.Enqueue(25);
+            queueList.Enqueue(95000.00);
+            queueList.Enqueue('M');
+
+
+            Console.WriteLine(queueList.Peek());//1
+            Console.WriteLine("-------------------");
+            Console.WriteLine(queueList.Dequeue());//1
+            Console.WriteLine("--------------------");
+
+
+            foreach (var item in queueList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadKey();
