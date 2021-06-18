@@ -463,12 +463,10 @@ Constructor Types in C#
 
             Console.WriteLine(sortList[8]);
 
-
             foreach (var key in sortList.Keys)
             {
                 Console.WriteLine("Key is:"+key +" value is:"+ sortList[key]);
             }
-
 
             C - HashTable
 
@@ -479,13 +477,10 @@ Constructor Types in C#
             hashList.Add(8, "Kevin");
             hashList.Add("Divya", null);
 
-
-
             foreach (var key in hashList.Keys)
             {
                 Console.WriteLine("Key is:" + key + " value is:" + hashList[key]);
             }
-
 
             D-Stack LIFO - Last in First out
 
