@@ -38,6 +38,7 @@ namespace CSharp_Tutorial
             DeskPhone LukesPhone = new DeskPhone(12345);
             LukesPhone.callPhone(12345);
             JakesPhone.myNumber = 54321;
+            Console.WriteLine(LukesPhone.myNumber);
 
             Console.ReadKey();
         }
