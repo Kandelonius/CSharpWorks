@@ -359,7 +359,7 @@ Constructor Types in C#
     1-It is value type and user define.
     2-To Declare the enum you will have to use 'enum' keyword.
     3-You can define it inside the namespace or inside the class.
-    4-Enum default datat type is int.
+    4-Enum default data type is int.
     5-Enum will start by default with 0 and it will add +1 for next item.
     6-Enum will not allow any other data type except all int types.
 
