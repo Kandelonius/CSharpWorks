@@ -9,6 +9,16 @@ Questions to keep in mind -
 - Explain Storage Account Properties?
 - Explain the types of Replication?
 - Types of Blob Storage?
+- What is the Hierarchy of Table storage?
+- What is max size supported for Queue storage
+- Is Queue Storage supports first-in-first-out model? explain?
+- What is the max size of the Queue Storage account?
+- What are the Protocals followed by file storage?
+- What is the Hierarchy of File storage?
+- What are common Access Control Features? explain?
+- Explain the kinds of Encryption w.r.t Data security?
+- What are the types of SAS blob storage supports?
+- What are the RBAC types? Management actions and Data actions
 
 Deployment models -
 	public cloud - Azure, AWS IMB Cloud
