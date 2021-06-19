@@ -126,87 +126,52 @@ Const and ReadOnly
 1. Const -
    A. Cannot be changed after it is declared
    B. A value must be given when a const is declared
+   C. Compile time propogation
               
 2. ReadOnly -
    A. Can only be changed in the constructor
 
 -------------------------------------------8th June 2021---------------------------------------------------------
 Operators in C#:-
-            1-Arithmetic Operator +,-,*,/,%
-            2-Assignment Opeartor =
-            3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
-            4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
-            5-Logical Operator &&(AND),||(OR),!(NOT)
-            6-Ternary Operator /? conditon?true:false;
+    1-Arithmetic Operator +,-,*,/,%
+    2-Assignment Opeartor =
+    3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
+    4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+    5-Logical Operator &&(AND),||(OR),!(NOT)
+    6-Ternary Operator /? conditon?true:false;
 
-1-Arithmetic Operator +,-,*,/,%
-   int i = 20, j = 10;
-   Console.WriteLine(i + j);20=10=30
-   Console.WriteLine(i - j);20-10=10
-   Console.WriteLine(i * j);20 * 10=200
-   Console.WriteLine(i / j);20/10=2
-   Console.WriteLine(i % j);20%10=0
-
-2-Assignment Opeartor =
-   int k = 200;
-
-            3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
-            int l = 20;
-
-            Console.WriteLine(l++);20
-            Console.WriteLine(++l);21+1=22
-            Console.WriteLine(l++);22
-            Console.WriteLine(l++);23
-            Console.WriteLine(l);24
-
-            Console.WriteLine(--l);20-1=19
-            Console.WriteLine(l--);19
-            Console.WriteLine(l--);19-1=18
-            Console.WriteLine(--l);201618-2=16
-
-            4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
-            int i = 20, j = 10;
-
-            Console.WriteLine(i > j);true
-            Console.WriteLine(i < j);false
-            Console.WriteLine(i >= j);true
-            Console.WriteLine(i <=j);false
-            Console.WriteLine(i == j);false
-            Console.WriteLine(i != j);true
-
-            5-Logical Operator &&(AND),||(OR),!(NOT)
-            && (AND) 1-If both condition is true then it will return true.
+    1-Arithmetic Operator +,-,*,/,%
+       int i = 20, j = 10;
+       Console.WriteLine(i + j);20=10=30
+       Console.WriteLine(i - j);20-10=10
+       Console.WriteLine(i * j);20 * 10=200
+       Console.WriteLine(i / j);20/10=2
+       Console.WriteLine(i % j);20%10=0
+    
+    2-Assignment Opeartor =
+       int k = 200;
+    
+    3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
+    
+    4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+    
+    5-Logical Operator &&(AND),||(OR),!(NOT)
+        && (AND) 
+            1-If both condition is true then it will return true.
             2-If first condtion is false it will not check second condition and it will return false.
             3-If first condition is true then it will check second condition and it second condition is true 
             then it will return true otherwise it will return false.
-            int i = 20, j = 10;
-
-            Console.WriteLine(i > j && j < i);true
-            Console.WriteLine(i < j && j != i);false
-            Console.WriteLine(i == j && j > i);false
-            Console.WriteLine(i != j && j < i);true
-
-            || (OR) 1-If first condition is true then it will not check second condition and it will return true.
+        
+        || (OR) 
+            1-If first condition is true then it will not check second condition and it will return true.
             2-If first condition is false then it will check second condition and if second condition is true  
             then it will return true.
             3-If both condition is false then only it will return false.
-
-            Console.WriteLine(i > j || j < i);true
-            Console.WriteLine(i < j || j != i);true
-            Console.WriteLine(i == j || j > i);false
-            Console.WriteLine(i != j || j < i);true
-
-            ! (Not)
-            Console.WriteLine(!(i > j || j < i));truefalse
-            Console.WriteLine(!(i < j || j != i));truefalse
-            Console.WriteLine(!(i == j || j > i));falsetrue
-            Console.WriteLine(!(i != j || j < i));truefalse
-
-            6-Ternary Operator conditon?true:false;
-
-            int result = !(i == j || j > i) ? 500 : 1000;
-
-            Console.WriteLine(result);
+        
+        ! (Not)
+    
+    6-Ternary Operator conditon?true:false;
+    int result = !(i == j || j > i) ? 500 : 1000;
 
 -------------------------------------------9th June 2021----------------------------
 
@@ -215,12 +180,10 @@ Loops in C#
     2. do while loop
     3. for loop
     4. for each loop
-
     1- While Loop
-
-    a. initialization
-    b. condition <, >, <=, >=
-    c. increment or decrement to (to avoid infinite loop) ++, --
+        a. initialization
+        b. condition <, >, <=, >=
+        c. increment or decrement to (to avoid infinite loop) ++, --
 
 ---------------------------------------10th June 2021---------------------------------------
 Access Specifier in CSharp

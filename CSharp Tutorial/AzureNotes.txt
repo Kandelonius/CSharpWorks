@@ -152,7 +152,7 @@ Data Lake – Management and Security:
 		Global scale
 	Security (including features from Blob storage
 Connectivity:
-•	…
+
 BlobFuse – open source project developed to provide a virtual file system backed by Azure Blob storage
 Uses libfuse open source library to communicate with the Linux FUSE kernel model and implements the file system operations using the Azure Storage Blob REST APIs
 -Features
