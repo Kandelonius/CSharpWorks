@@ -9,6 +9,10 @@ Questions to keep in mind -
 - Explain Storage Account Properties?
 - Explain the types of Replication?
 - Types of Blob Storage?
+- What is Disaster Recovery? Explain?
+- What is Scalability? Explain it types?
+- What is Hierarchy for creating a resource in Azure?
+- What are the default entities Table Storage has?
 - What is the Hierarchy of Table storage?
 - What is max size supported for Queue storage
 - Is Queue Storage supports first-in-first-out model? explain?
@@ -18,7 +22,17 @@ Questions to keep in mind -
 - What are common Access Control Features? explain?
 - Explain the kinds of Encryption w.r.t Data security?
 - What are the types of SAS blob storage supports?
-- What are the RBAC types? Management actions and Data actions
+- What are the RBAC types?
+- Explain Azure Data Box?
+- Explain CDN?
+- Explain ADLS?
+- What are ADLS connectivity types?
+- What is the difference b/w Blob & ADLS?
+- Explain Blobfuse?
+- Explain NFS?
+- What is the difference b/w Blobfuse & NFS?
+- Explain StaticWebpage?
+- Explain Static to dynamic difference?
 
 Deployment models -
 	public cloud - Azure, AWS IMB Cloud

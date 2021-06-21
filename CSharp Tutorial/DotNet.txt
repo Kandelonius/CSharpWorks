@@ -1,15 +1,37 @@
 Questions to keep in mind -
 
-1-What is C#?
-2-What is JIT? and what is the role of JIT?
-3-Difference between readonly and const keyword?
-4-Difference between value type and reference type in C#?
-5-Difference between Implicit & Explicit Conversion?
-6-Difference between boxing and unboxing?
-7-What are operators in C#?
-8-What is the use of if else condition?
-9-Difference between if else and switch case  in C#?
-10-Difference between for loop and Foreach loop in C#?
+1-What is C#? 
+2-What is difference between value type and reference type? 
+3-What is JIT Compiler? 
+4-Difference between Implicit & explicit Conversion? 
+5-Difference boxing & unboxing in C#?
+6-What is operators in C#? 
+7-What is && AND operator? 
+8-What is difference between if else and switch case? 
+9-Difference between while do-while loop?  
+10-Difference between for and foreach loop? 
+11-What is difference between break and continue keyword? 
+12-What is array in C#?
+13-Difference between single dimensinal array and mutlidimensional array?
+14-What is access specifier?
+15-What is default access specifier of a class?
+16-Difference between protected and internal access specifier?
+17-Difference between Static and non-static method in c#?
+18-Difference between virtual and abstract method?
+19-What is extension method?
+20-What is partial method?
+21-What is sealed class?
+22-What is Constructor in C#?
+23-Difference between static and non-static Constructor?
+24-What is difference between default & parametrized constructor?
+25-Difference between ref & out parameters in C#?
+26-What is params parameters in C#?
+27-Difference between abstract class and interface?
+28- What is inheritance?
+29-What is DBMS?
+30-What is collection in C#?
+31-What is difference between Stack and Queue?
+32-Difference between ArrayList and List?
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
@@ -25,7 +47,7 @@ MSIL - Microsoft Intermediate Language: a CPU-independent set of instructions th
     converted to native code. A combination off dll and exe
 .dll - Dynamic Link Library - does not contain a Main method: class library
 .exe - Executable File - contains the Main method
-JIT - Just In Time - compiler, it translates native C# code to machine code
+JIT - Just In Time - compiler, it translates native C# code to machine code aka MSIL
 Compile Time - the period of time when the developer's code is converted into machine code. Generates exe and dll
 Run Time - the period of time where the code is executed. Gives final output
 CTS - Common Type System - defines how types are declared, used and managed in the CLR and 
@@ -337,14 +359,13 @@ Constructor Types in C#
     7-We can define parameter less constructor.    
 
     Struct In CSharp
-    1-It is value type and user define type.
+    1-It is value type and user defined type.
     2-It gets memory on stack.
     3-GC not required.
     4-You will have to use 'struct' keyword to define structure.
     5-It is good for small amount of data storage.
-    6-All pre-define value type derive from struct.
-    7-You can't define explicity parameterless constructor but internally 
-    default constructor exist.
+    6-All pre-defined value types are derived from struct.
+    7-You can't define explicity parameterless constructor but internally default constructor exists.
     8-Struct will also behave same like class with some limitation.
 
 -------------------------16th June 2021------------------------------------------
