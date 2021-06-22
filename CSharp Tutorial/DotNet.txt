@@ -27,6 +27,8 @@ Questions to keep in mind -
 25-Difference between ref & out parameters in C#?
 26-What is params parameters in C#?
 27-Difference between abstract class and interface?
+    A- Abstract classes can have implementations for some of its members whereas interface members cannot have
+    any implementations
 28- What is inheritance?
 29-What is DBMS?
 30-What is collection in C#?
