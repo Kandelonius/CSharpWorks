@@ -1,39 +1,50 @@
 Questions to keep in mind -
 
 1-What is C#? 
-2-What is difference between value type and reference type? 
-3-What is JIT Compiler? 
-4-Difference between Implicit & explicit Conversion? 
-5-Difference boxing & unboxing in C#?
-6-What is operators in C#? 
-7-What is && AND operator? 
-8-What is difference between if else and switch case? 
-9-Difference between while do-while loop?  
-10-Difference between for and foreach loop? 
-11-What is difference between break and continue keyword? 
-12-What is array in C#?
-13-Difference between single dimensinal array and mutlidimensional array?
-14-What is access specifier?
-15-What is default access specifier of a class?
-16-Difference between protected and internal access specifier?
-17-Difference between Static and non-static method in c#?
-18-Difference between virtual and abstract method?
-19-What is extension method?
-20-What is partial method?
-21-What is sealed class?
-22-What is Constructor in C#?
-23-Difference between static and non-static Constructor?
-24-What is difference between default & parametrized constructor?
-25-Difference between ref & out parameters in C#?
-26-What is params parameters in C#?
-27-Difference between abstract class and interface?
+    A- A type safe object oriented programming language built on the .NET Framework.
+2-What is .NET Framework?
+    A- A developer platform  made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
+    and libraries used for building different types of applications.
+3-What is difference between value type and reference type? 
+    A- A value type(int, bool, char) is stored on the stack and has a default value of 0 requires no
+    garbage collection whereas a reference type(string, class, array) is stored in heap memory and
+    does require garbage collection to clean up.
+4-What is garbage collection?
+    A- A process where unused memory is reallocated so it can be used for some other purpose. This memory is technically
+    still in tact until something else is assigned to it.
+5-What is JIT Compiler? 
+    A- "Just In Time" compiler converts code from human readable()
+6-Difference between Implicit & explicit Conversion? 
+7-Difference boxing & unboxing in C#?
+8-What is operators in C#? 
+9-What is && AND operator? 
+10-What is difference between if else and switch case? 
+11-Difference between while do-while loop?  
+12-Difference between for and foreach loop? 
+13-What is difference between break and continue keyword? 
+14-What is array in C#?
+15-Difference between single dimensinal array and mutlidimensional array?
+16-What is access specifier?
+17-What is default access specifier of a class?
+18-Difference between protected and internal access specifier?
+19-Difference between Static and non-static method in c#?
+20-Difference between virtual and abstract method?
+21-What is extension method?
+22-What is partial method?
+23-What is sealed class?
+24-What is Constructor in C#?
+25-Difference between static and non-static Constructor?
+26-What is difference between default & parametrized constructor?
+27-Difference between ref & out parameters in C#?
+28-What is params parameters in C#?
+29-Difference between abstract class and interface?
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
-28- What is inheritance?
-29-What is DBMS?
-30-What is collection in C#?
-31-What is difference between Stack and Queue?
-32-Difference between ArrayList and List?
+30- What is inheritance?
+31-What is DBMS?
+32-What is collection in C#?
+33-What is difference between Stack and Queue?
+34-Difference between ArrayList and List?
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
