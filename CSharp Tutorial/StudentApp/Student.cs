@@ -54,5 +54,23 @@ namespace StudentApp
                 }
             }
         }
+
+        public static void deleteStudent(List<Student> list, int id)
+        {
+            if (list.Count < 1)
+            {
+                Console.WriteLine("No records");
+                return;
+            }
+            foreach (Student item in list)
+            {
+                if (item.id == id)
+                {
+                    Console.WriteLine($"Deleting student {item.studentName}, ID #{item.id}");
+                    list.Remove(item);
+                    return;
+                }
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace StudentApp
     {
         static void Main(string[] args)
         {
+            int tryId;
             int userNumber = 1;
             var students = new List<Student>();
             Student james = new Student("james", 28, "a@b.c");
@@ -25,9 +26,9 @@ namespace StudentApp
                         Student.getStudents(students);
                         continue;
                     case 2:
-                        Console.WriteLine("Please enter a user id to retrieve their records.");
+                        Console.WriteLine("Please enter a student id to retrieve their records.");
                         userInput = Console.ReadLine();
-                        int tryId = Convert.ToInt32(userInput);
+                        tryId = Convert.ToInt32(userInput);
                         Student.getSingleStudent(students, tryId);
                         continue;
                     case 3:
@@ -37,7 +38,10 @@ namespace StudentApp
                         Console.WriteLine("hello 1");
                         continue;
                     case 5:
-                        Console.WriteLine("hello 1");
+                        Console.WriteLine("Please enter a student id to delete them.");
+                        userInput = Console.ReadLine();
+                        tryId = Convert.ToInt32(userInput);
+                        Student.deleteStudent(students, tryId);
                         continue;
                     case 6:
                         Console.WriteLine("We're done here");
