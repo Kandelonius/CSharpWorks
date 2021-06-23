@@ -26,17 +26,32 @@ namespace StudentApp
 
         public static void getStudents(List<Student> list)
         {
-            if (list.Count > 0)
+            if (list.Count < 1)
             {
-                foreach(Student item in list)
+                Console.WriteLine("No records");
+                return;
+            }
+            foreach (Student item in list)
+            {
+                Console.WriteLine($"Student's name is {item.studentName}, ID #{item.id}, " +
+                    $"student's age is {item.studentAge} and their email is {item.studentEmail}");
+            }
+        }
+
+        public static void getSingleStudent(List<Student> list, int id)
+        {
+            if (list.Count < 1)
+            {
+                Console.WriteLine("No records");
+                return;
+            }
+            foreach (Student item in list)
+            {
+                if (item.id == id)
                 {
                     Console.WriteLine($"Student's name is {item.studentName}, ID #{item.id}, " +
                         $"student's age is {item.studentAge} and their email is {item.studentEmail}");
                 }
-            }
-            else
-            {
-                Console.WriteLine("No records");
             }
         }
     }
