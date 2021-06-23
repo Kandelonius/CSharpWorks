@@ -72,5 +72,58 @@ namespace StudentApp
                 }
             }
         }
+
+        public static void updateStudent(List<Student> list, int id, int selection)
+        {
+            string input = "";
+            string newName = "";
+            string oldName = "";
+            int newAge = 0;
+            int oldAge = 0;
+            string newEmail = "";
+            string oldEmail = "";
+            if (list.Count < 1)
+            {
+                Console.WriteLine("No records");
+                return;
+            }
+            foreach (Student item in list)
+            {
+                if (item.id == id)
+                {
+                    switch (selection)
+                    {
+                        case 1:
+                            Console.WriteLine($"Please enter a name to replace {item.studentName}'s name");
+                            oldName = item.studentName;
+                            newName = Console.ReadLine();
+                            item.studentName = newName;
+                            Console.WriteLine($"Updated {oldName} to {newName}");
+                            break;
+                        case 2:
+                            Console.WriteLine($"Please enter the student's age to update from {item.studentAge}");
+                            oldAge = item.studentAge;
+                            input = Console.ReadLine();
+                            newAge = Convert.ToInt32(input);
+                            item.studentAge = newAge;
+                            Console.WriteLine($"Updated {oldAge} to {newAge}");
+                            break;
+                        case 3:
+                            Console.WriteLine($"Please enter an email to replace {item.studentName}'s email" +
+                                $"from {item.studentEmail}");
+                            oldEmail = item.studentEmail;
+                            newEmail = Console.ReadLine();
+                            item.studentEmail = newEmail;
+                            Console.WriteLine($"Updated {oldEmail} to {newEmail}");
+                            break;
+                        default:
+                            Console.WriteLine($"{selection} is an invalid selection");
+                            break;
+                    }
+                    return;
+                }
+            }
+            Console.WriteLine($"user {id} doesn't exist");
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace StudentApp
     {
         static void Main(string[] args)
         {
+            int updateSelection = 0;
             int tryId;
             int userNumber = 1;
             var students = new List<Student>();
@@ -35,7 +36,14 @@ namespace StudentApp
                         Console.WriteLine("hello 1");
                         continue;
                     case 4:
-                        Console.WriteLine("hello 1");
+                        Console.WriteLine("Please enter a student id to update their information.");
+                        userInput = Console.ReadLine();
+                        tryId = Convert.ToInt32(userInput);
+                        Console.WriteLine("Now tell me what you want to update \n1- Update name\n" +
+                            "2- Update age\n3- Update email");
+                        userInput = Console.ReadLine();
+                        updateSelection = Convert.ToInt32(userInput);
+                        Student.updateStudent(students, tryId, updateSelection);
                         continue;
                     case 5:
                         Console.WriteLine("Please enter a student id to delete them.");
