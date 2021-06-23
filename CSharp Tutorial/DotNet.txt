@@ -3,7 +3,7 @@ Questions to keep in mind -
 1-What is C#? 
     A- A type safe object oriented programming language built on the .NET Framework.
 2-What is .NET Framework?
-    A- A developer platform  made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
+    A- A developer platform made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
     and libraries used for building different types of applications.
 3-What is difference between value type and reference type? 
     A- A value type(int, bool, char) is stored on the stack and has a default value of 0 requires no
@@ -11,7 +11,7 @@ Questions to keep in mind -
     does require garbage collection to clean up.
 4-What is garbage collection?
     A- A process where unused memory is reallocated so it can be used for some other purpose. This memory is technically
-    still in tact until something else is assigned to it.
+    still in-tact until something else is assigned to it.
 5-What is JIT Compiler? 
     A- "Just In Time" compiler converts code from human readable()
 6-Difference between Implicit & explicit Conversion? 
@@ -23,7 +23,7 @@ Questions to keep in mind -
 12-Difference between for and foreach loop? 
 13-What is difference between break and continue keyword? 
 14-What is array in C#?
-15-Difference between single dimensinal array and mutlidimensional array?
+15-Difference between single dimensional array and mutli-dimensional array?
 16-What is access specifier?
 17-What is default access specifier of a class?
 18-Difference between protected and internal access specifier?
@@ -52,7 +52,7 @@ C# Programing Language with .NET Framework:-
 C# 1.0 Year 2002 .NET Framework 1.0 + IDE -2002
 C# 9.0 Year 2021 .NET Framework 4.8 IDE -2019
 
-Age Of C# Programing Language= 19+ years
+Age of C# Programing Language= 19+ years
 
 CLR - Common Language Runtime: runtime environment that manages the execution of programs written in
     any language that uses .NET Framework
@@ -101,7 +101,7 @@ Data Type - Defines the type of data
 Class - It is represented by an object. Class is a container which contains its members
 Object - It represents the class.
 
-Pre-Defined OR Buit-In Data Types in C# - int,double,char,bool,string,object etc.            
+Pre-Defined OR Built-In Data Types in C# - int,double,char,bool,string,object etc.            
 
 User Defined Data Types in C# - class,object,array,delegate,interface,struct,enum,etc.
 
@@ -112,8 +112,8 @@ Value Type - int,double,char,bool,struct,enum etc.
 
 Reference Type - string,object,class,object,array,delegate,interface, etc.
   A. Has a default value of null.
-  B. Referece type value is stored in heap memory but its reference is stored on the stack.
-  C. Garbage collection is required for memory mamangement.
+  B. Reference type value is stored in heap memory but its reference is stored on the stack.
+  C. Garbage collection is required for memory management.
 
 Class vs Object
 
@@ -161,7 +161,7 @@ Const and ReadOnly
 1. Const -
    A. Cannot be changed after it is declared
    B. A value must be given when a const is declared
-   C. Compile time propogation
+   C. Compile time propagation
               
 2. ReadOnly -
    A. Can only be changed in the constructor
@@ -169,9 +169,9 @@ Const and ReadOnly
 -------------------------------------------8th June 2021---------------------------------------------------------
 Operators in C#:-
     1-Arithmetic Operator +,-,*,/,%
-    2-Assignment Opeartor =
-    3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
-    4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+    2-Assignment Operator =
+    3-Unary Operator i++(Post-Increment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
+    4-Comparision Operator or Conditional Operator >,<,>=,<=,==,!=
     5-Logical Operator &&(AND),||(OR),!(NOT)
     6-Ternary Operator /? conditon?true:false;
 
@@ -183,17 +183,17 @@ Operators in C#:-
        Console.WriteLine(i / j);20/10=2
        Console.WriteLine(i % j);20%10=0
     
-    2-Assignment Opeartor =
+    2-Assignment Operator =
        int k = 200;
     
     3-Unary Operator i++(Post-Incrment),++i(Pre-Increment),i--(Post-Decrement),--i(Pre-Decrement)
     
-    4-Comparision Oprator or Conditional Operator >,<,>=,<=,==,!=
+    4-Comparision Operator or Conditional Operator >,<,>=,<=,==,!=
     
     5-Logical Operator &&(AND),||(OR),!(NOT)
         && (AND) 
             1-If both condition is true then it will return true.
-            2-If first condtion is false it will not check second condition and it will return false.
+            2-If first condition is false it will not check second condition and it will return false.
             3-If first condition is true then it will check second condition and it second condition is true 
             then it will return true otherwise it will return false.
         
@@ -225,8 +225,9 @@ Access Specifier in CSharp
 1-Public - It will be accessible in whole solution.
 2-Private - Only allowed inside the class.
 3-Protected - Derived class instance only can access protected members.
-4-Internal - Witing a assemble.
-5-Protected Internal - Derived class instance only can access protected members. + Witing a assemble. 
+4-Internal - Type or member can be accessed by code in the same assembly, but not from another assembly.
+5-Protected Internal - The type or member can be accessed only within its declaring assembly, by code 
+    in the same class or in a type that is derived from that class. 
 
 ----------------------------------------------11th June 2021------------------------
 1-Is C# is case sensitive programing language?
@@ -244,34 +245,34 @@ Access Specifier in CSharp
 Abstract Method in C-Sharp - The abstract keyword enables you to create classes and class members that are 
 incomplete and must be implemented in a derived class
     1-If you would like to create an abstract method then the class must also be abstract.
-    2-It does not mean that if you have defined an abstract class thah you also have to define an abstract method.
+    2-It does not mean that if you have defined an abstract class that you also have to define an abstract method.
     3-You can't define the body of an abstract method.
     4-You can't define an abstract method as a private method.
-    5-Inside the abstract class you can also define non-abstract methods like non-static,static,virtual etc.
+    5-Inside the abstract class you can also define non-abstract methods like non-static, static, virtual etc.
     6-If you have defined a static method under an abstract class that method can be accessed with the abstract
     class.
     7-Besides static methods you can't access any other method with abstract class because you can't create an
     instance of an abstract class.
-    8-If you would like to use an abstract method then you will have to use inhertiance which means you will
+    8-If you would like to use an abstract method then you will have to use inheritance which means you will
     inherit the abstract class and in the other class and then you will have to provide the body of all the 
     abstract methods in that inherited class. And when you provide the body you will have to use 'override' keyword.
 
 -----------------------------------------14th June 2021---------------------------------------------------
 Extension Method in C#
-    1-When you will define a extesnion method then you will have to use static modifier.            
+    1-When you will define a extension method then you will have to use static modifier.            
     2-Extension method parameter must be passed 'this' keyword with the type.
     3-Class must be static class.
     4-Only the type have the rights to access this method.
 
 What is Constructor in CSharp?
-Ans:-Constructor is a special type of method. It does not contain return type,it has the same name
-as we have the class name. Every class has a default constructor. And default Constructor will be 
-called automatically whenever you will create the instance or object of the class. And the role of
-default constructor is to assign the default value to the class level fields.
+    Ans:-Constructor is a special type of method. It does not contain return type,it has the same name
+    as we have the class name. Every class has a default constructor. And default Constructor will be 
+    called automatically whenever you will create the instance or object of the class. And the role of
+    default constructor is to assign the default value to the class level fields.
 
-If you have normal class then it will get default constructor. If you have static class then it will
-get default static constructor and static constructor role is to assign the default value to static
-fields of the class. Only one static constructor you can define or by default it exist.
+    If you have normal class then it will get default constructor. If you have static class then it will
+    get default static constructor and static constructor role is to assign the default value to static
+    fields of the class. Only one static constructor you can define or by default it exists.
 
 Constructor Types in C#
     1-Default Or Parameterless Constructor :- If you will not manually define the it will be called as
@@ -297,9 +298,9 @@ Constructor Types in C#
         --------------------------------------------15th June 2021----------------------------------------------
     Interface in CSharp
     1-Whenever you will create a interface just keep 'I' as prefix with the interface name. It does not
-    mandatory but it is a part of naming convenstion which you shuld follow.
-    2-You will use interface keyword to create the interface and interface will contain only property,method,
-    delegate,events.
+    mandatory but it is a part of naming convention which you should follow.
+    2-You will use interface keyword to create the interface and interface will contain only property, method,
+    delegate, events.
     3-You can only declare the members inside the interface. You can't provide the body.
     4-You can't use any access specifier with interface members because they are by default public.
     5-To access the members of interface, you will have to inherit interface with the class and that time
@@ -368,7 +369,7 @@ Constructor Types in C#
     3-GC is required for clean up.
     4-You will have to use 'class' keyword to define class.
     5-It is good for large amount of data storage.
-    6-All pre-define referece type derive from class.
+    6-All pre-define reference type derive from class.
     7-We can define parameter less constructor.    
 
     Struct In CSharp
@@ -378,7 +379,7 @@ Constructor Types in C#
     4-You will have to use 'struct' keyword to define structure.
     5-It is good for small amount of data storage.
     6-All pre-defined value types are derived from struct.
-    7-You can't define explicity parameterless constructor but internally default constructor exists.
+    7-You can't define explicitly a parameterless constructor but internally default constructor exists.
     8-Struct will also behave same like class with some limitation.
 
 -------------------------16th June 2021------------------------------------------
