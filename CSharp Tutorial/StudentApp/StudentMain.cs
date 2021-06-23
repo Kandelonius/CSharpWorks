@@ -11,15 +11,20 @@ namespace StudentApp
             int tryId;
             int userNumber = 1;
             var students = new List<Student>();
-            Student james = new Student("james", 28, "a@b.c");
-            students.Add(james);
+            string tempName = "";
+            string tempAge = "";
+            string tempEmail = "";
+            string userInput = "";
+            int userAge = 0;
+            //Student james = new Student("james", 28, "a@b.c");
+            //students.Add(james);
             do
             {
                 Console.WriteLine($"please enter a number between 1 and 6\n" +
                     "1- Show all student records \n2- Show a selected student records \n" +
                     "3- Add a new student \n4- Update student details \n" +
                     "5- Delete a student \n6- Quit");
-                string userInput = Console.ReadLine();
+                userInput = Console.ReadLine();
                 userNumber = Convert.ToInt32(userInput);
                 switch(userNumber)
                 {
@@ -33,7 +38,16 @@ namespace StudentApp
                         Student.getSingleStudent(students, tryId);
                         continue;
                     case 3:
-                        Console.WriteLine("hello 1");
+                        Console.WriteLine("You have chosen to add a new student. \n" +
+                            "Please enter the student's name");
+                        tempName = Console.ReadLine();
+                        Console.WriteLine($"Now enter an age for {tempName}");
+                        tempAge = Console.ReadLine();
+                        userAge = Convert.ToInt32(tempAge);
+                        Console.WriteLine($"Now please enter an email for {tempName}");
+                        tempEmail = Console.ReadLine();
+                        var student = new Student(tempName.ToString(), userAge, tempEmail);
+                        students.Add(student);
                         continue;
                     case 4:
                         Console.WriteLine("Please enter a student id to update their information.");
