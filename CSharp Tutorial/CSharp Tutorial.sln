@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		DotNet.txt = DotNet.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp", "StudentApp\StudentApp.csproj", "{B8F67FAC-9B36-4C10-BAC3-C6C9C33248DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{29DB4DB9-1A33-43A5-B00F-41EDBE5DDEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29DB4DB9-1A33-43A5-B00F-41EDBE5DDEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29DB4DB9-1A33-43A5-B00F-41EDBE5DDEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F67FAC-9B36-4C10-BAC3-C6C9C33248DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F67FAC-9B36-4C10-BAC3-C6C9C33248DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F67FAC-9B36-4C10-BAC3-C6C9C33248DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F67FAC-9B36-4C10-BAC3-C6C9C33248DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
