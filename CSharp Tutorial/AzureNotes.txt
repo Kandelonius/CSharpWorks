@@ -29,7 +29,9 @@ Questions to keep in mind -
 - What are the default entities Table Storage has?
 - What is the Hierarchy of Table storage?
 - What is max size supported for Queue storage
-- Is Queue Storage supports first-in-first-out model? explain?
+- Does Queue Storage support first-in-first-out model? explain?
+	A- No, a message in queue storage only leaves when its condition is met or it is dequeued either
+	manually or an automated dequeue condition is met
 - What is the max size of the Queue Storage account?
 - What are the Protocals followed by file storage?
 - What is the Hierarchy of File storage?
