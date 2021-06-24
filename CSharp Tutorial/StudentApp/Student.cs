@@ -7,11 +7,11 @@ namespace StudentApp
     {
         int id { get; }
 
-        public string studentName { get; set; }
+        private string studentName { get; set; }
 
-        public int studentAge { get; set; }
+        private int studentAge { get; set; }
 
-        public string studentEmail { get; set; }
+        private string studentEmail { get; set; }
 
         private static int idSeed = 1;
 

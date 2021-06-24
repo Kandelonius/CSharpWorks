@@ -44,8 +44,9 @@ namespace StudentApp
                         userAge = Convert.ToInt32(tempAge);
                         Console.WriteLine($"Now please enter an email for {tempName}");
                         tempEmail = Console.ReadLine();
-                        var student = new Student(tempName.ToString(), userAge, tempEmail);
+                        Student student = new Student(tempName.ToString(), userAge, tempEmail);
                         students.Add(student);
+                        Console.Clear();
                         continue;
                     case 4:
                         Console.WriteLine("Please enter a student id to update their information.");
@@ -56,6 +57,7 @@ namespace StudentApp
                         userInput = Console.ReadLine();
                         updateSelection = Convert.ToInt32(userInput);
                         Student.updateStudent(students, tryId, updateSelection);
+                        Console.Clear();
                         continue;
                     case 5:
                         Console.WriteLine("Please enter a student id to delete them.");
