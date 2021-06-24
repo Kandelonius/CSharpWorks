@@ -16,8 +16,6 @@ namespace StudentApp
             string tempEmail = "";
             string userInput = "";
             int userAge = 0;
-            //Student james = new Student("james", 28, "a@b.c");
-            //students.Add(james);
             do
             {
                 Console.WriteLine($"please enter a number between 1 and 6\n" +
@@ -26,7 +24,7 @@ namespace StudentApp
                     "5- Delete a student \n6- Quit");
                 userInput = Console.ReadLine();
                 userNumber = Convert.ToInt32(userInput);
-                switch(userNumber)
+                switch (userNumber)
                 {
                     case 1:
                         Student.getStudents(students);
@@ -75,10 +73,7 @@ namespace StudentApp
                 }
 
             } while (userNumber != 6);
-            
-            //Console.WriteLine(james.studentName);
-            //james.studentName = "Josh";
-            //Console.WriteLine(james.ToString());
+
             Console.ReadKey();
         }
     }

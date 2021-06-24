@@ -2,13 +2,27 @@ Azure and cloud computing
 
 Questions to keep in mind -
 
+- What are the different deployment models?
+	A- 
+		Public - allows for public access such as azure and AWS
+		Private - allows for very limited access to the cloud service
+		Hybrid - used by government agencies that need to store sensitive information but also need a 
+			public facing presence
 - What are different types of Data? explain?
 - Explain Storage LifeCycle of a Data?
 - What is maximum data you can store per Storage Account?
 - Types of Storage Accounts? Explain?
 - Explain Storage Account Properties?
 - Explain the types of Replication?
+	A-
+		LRS(Locally-redundant storage) replication to 3 other units within the region
+		GRS(Geo-redundant storage) replication to a secondary region, includes LRS-like replication
+		ZRS(Zone-redundant storage) replication to 3 availability zones within the region
+		GZRS(Geo-zone-redundant storage) a combination of ZRS and GRS
 - Types of Blob Storage?
+	A- 
+		Block Blob - 
+		Page Blob - 
 - What is Disaster Recovery? Explain?
 - What is Scalability? Explain it types?
 - What is Hierarchy for creating a resource in Azure?
@@ -33,6 +47,7 @@ Questions to keep in mind -
 - What is the difference b/w Blobfuse & NFS?
 - Explain StaticWebpage?
 - Explain Static to dynamic difference?
+- What is VPN Gateway?
 
 Deployment models -
 	public cloud - Azure, AWS IMB Cloud
