@@ -3,14 +3,22 @@ Azure and cloud computing
 Questions to keep in mind -
 
 - Explain Subnets?
+	A- A virtual network can be partitioned into one or more sub-networks. The subnets can be separated
+	logically and each subnet consists of a server
+		- A subnet can be further divided into two types: Public and Private
 - What are some benefits of cloud?
-	A- High scalability, disaster recovery, high security
+	A- High scalability, disaster recovery, high security, highly reliable, worldwide connectivity
 - What are the different deployment models?
 	A- 
 		Public - allows for public access such as azure and AWS
 		Private - allows for very limited access to the cloud service
 		Hybrid - used by government agencies that need to store sensitive information but also need a 
 			public facing presence
+- What are the service models, when should you use them?
+	A-
+		IAAS(Infrastructure as a service) - Used when your company needs a VM, servers or storage
+		PAAS(Platform as a service) - Used when your company needs a platform for building software
+		SAAS(Software as a service) - Used when your company doesn't want to maintain any IT equipment
 - What are different types of Data? explain?
 	A-
 		Structured data - Data that is defined and understoon such as SQL data
@@ -18,10 +26,10 @@ Questions to keep in mind -
 		Unstructured data - Data that isn't well defined such as image or video files
 - Explain Storage LifeCycle of a Data?
 	A- 
-		Real time - 
-		Near time - 
-		Long term - 
-		Archive - not meant to be accessed except on rare occasions
+		Real time - On demand, accessed often. Used for caching, searching, high performance workloads
+		Near time - used for standard workloads, computations, video
+		Long term - used for time based, use based, expiry based actions
+		Archive - not meant to be accessed except on rare occasions. Used for backups and compliance
 - What is maximum data you can store per Storage Account?
 - Types of Storage Accounts? Explain?
 - Explain Storage Account Properties?
