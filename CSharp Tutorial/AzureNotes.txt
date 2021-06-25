@@ -2,6 +2,9 @@ Azure and cloud computing
 
 Questions to keep in mind -
 
+- Explain Subnets?
+- What are some benefits of cloud?
+	A- High scalability, disaster recovery, high security
 - What are the different deployment models?
 	A- 
 		Public - allows for public access such as azure and AWS
@@ -9,7 +12,16 @@ Questions to keep in mind -
 		Hybrid - used by government agencies that need to store sensitive information but also need a 
 			public facing presence
 - What are different types of Data? explain?
+	A-
+		Structured data - Data that is defined and understoon such as SQL data
+		Semi-structured data - Not as defined but does have some structure, NOSQL
+		Unstructured data - Data that isn't well defined such as image or video files
 - Explain Storage LifeCycle of a Data?
+	A- 
+		Real time - 
+		Near time - 
+		Long term - 
+		Archive - not meant to be accessed except on rare occasions
 - What is maximum data you can store per Storage Account?
 - Types of Storage Accounts? Explain?
 - Explain Storage Account Properties?
@@ -50,6 +62,7 @@ Questions to keep in mind -
 - Explain StaticWebpage?
 - Explain Static to dynamic difference?
 - What is VPN Gateway?
+
 
 Deployment models -
 	public cloud - Azure, AWS IMB Cloud

@@ -1,10 +1,10 @@
 Questions to keep in mind -
 
-1-What is C#? 
-    A- A type safe object oriented programming language built on the .NET Framework.
-2-What is .NET Framework?
+1-What is .NET Framework?
     A- A developer platform made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
     and libraries used for building different types of applications.
+2-What is C#? 
+    A- A type safe object oriented programming language built on the .NET Framework.
 3-What is difference between value type and reference type? 
     A- A value type(int, bool, char) is stored on the stack and has a default value of 0 requires no
     garbage collection whereas a reference type(string, class, array) is stored in heap memory and
