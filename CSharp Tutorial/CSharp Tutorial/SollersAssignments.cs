@@ -12,6 +12,12 @@ namespace CSharp_Tutorial
             string reverseDoWhile = "";
             int index = 0;
 
+            if(input.Length < 2)
+            {
+                Console.WriteLine($"You entered {input} which is not long enough to be meaninfully reversed");
+                return;
+            }
+
             while (index < input.Length)
             {
                 reverseWhile = input[index] + reverseWhile;
@@ -179,7 +185,34 @@ namespace CSharp_Tutorial
                     Console.WriteLine(angleLine);
                 }
             }
+        }
 
+        public static Boolean PalindromeChecker(string text)
+        {
+            int start = 0;
+            int end = text.Length - 1;
+
+            if (text.Length <= 1)
+            {
+                Console.WriteLine($"You entered {text} which is only a single character.");
+                return true;
+            }
+
+            for (int i = 0; i < text.Length / 2; i++)
+            {
+                if (text[start] == text[end] && start <= end)
+                {
+                    start++;
+                    end--;
+                }
+                else
+                {
+                    Console.WriteLine($"{text} is not a palindrome.");
+                    return false;
+                }
+            }
+            Console.WriteLine($"Yay {text} is a palindrome.");
+            return true;
         }
 
         static Boolean ValidNumber(string usernum)
