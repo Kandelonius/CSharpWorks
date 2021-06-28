@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharp_Tutorial
 {
@@ -45,6 +46,32 @@ namespace CSharp_Tutorial
                 result += CapitalizeWord(item);
             }
             return result;
+        }
+
+        public static void CheckDuplicates()
+        {
+            Console.WriteLine("Please enter a string to be checked");
+            var dict = new Dictionary<char, int>();
+            string input = Console.ReadLine();
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (dict.ContainsKey(input[i]))
+                {
+                    dict[input[i]] += 1;
+                }
+                else
+                {
+                    dict.Add(input[i], 1);
+                }
+            }
+            foreach (var l in input)
+            {
+                if (dict[l] > 1)
+                {
+                    Console.WriteLine($"{l} occurs more than once in your input");
+                }
+            }
         }
     }
 }
