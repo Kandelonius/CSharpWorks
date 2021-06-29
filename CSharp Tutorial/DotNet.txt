@@ -16,8 +16,8 @@ Questions to keep in mind -
     A- "Just In Time" compiler converts code from human readable()
 6-Difference between Implicit & explicit Conversion? 
 7-Difference boxing & unboxing in C#?
-8-What is operators in C#? 
-9-What is && AND operator? 
+8-What are operators in C#? 
+9-What are && and || operators? 
 10-What is difference between if else and switch case? 
 11-Difference between while do-while loop?  
 12-Difference between for and foreach loop? 
