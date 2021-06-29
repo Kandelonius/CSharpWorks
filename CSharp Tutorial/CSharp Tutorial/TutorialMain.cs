@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using BankLibrary;
 
 namespace CSharp_Tutorial
 {
@@ -8,6 +6,8 @@ namespace CSharp_Tutorial
     {
         static void Main(string[] args)
         {
+
+            
 
             Console.ReadKey();
 
