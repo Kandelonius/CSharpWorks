@@ -6,7 +6,17 @@ namespace Pillars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car newcar = new Car();
+            ElectricCar volt = new ElectricCar();
+
+            newcar.Wheels = 4;
+
+            Console.WriteLine($"this car has {newcar.Wheels} wheels");
+            Console.WriteLine($"Electric car says {volt.EngineStart(true)}");
+
+
+
+            Console.Read();
         }
     }
 }
