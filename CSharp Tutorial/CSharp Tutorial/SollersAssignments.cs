@@ -73,8 +73,9 @@ namespace CSharp_Tutorial
             int arrSize = Convert.ToInt32(input); // I am not checking this number prior to converting it.
             int[] nums = new int[arrSize];
             int count = 0;
+            int max = 0;
 
-            while(count < arrSize)
+            while (count < arrSize)
             {
                 int temp;
                 Console.WriteLine($"Please enter number #{count + 1}");
@@ -82,27 +83,20 @@ namespace CSharp_Tutorial
                 if (ValidNumber(number))
                 {
                     temp = Convert.ToInt32(number);
+                    if (nums.Length == 0)
+                    {
+                        max = temp;
+                    }
+                    if (temp > max)
+                    {
+                        max = temp;
+                    }
                     nums[count] = temp;
                     count++;
                 }
                 else
                 {
                     Console.WriteLine($"Sorry {number} isn't a valid input, please try again.");
-                }
-            }
-
-            count = 0;
-            int max = nums[0];
-            foreach (int num in nums)
-            {
-                if(nums[count] > max)
-                {
-                    max = nums[count];
-                    count++;
-                }
-                else
-                {
-                    count++;
                 }
             }
             Console.WriteLine($"The highest number of the {arrSize} numbers you provided was {max}");
