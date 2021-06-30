@@ -6,10 +6,9 @@ namespace Pillars
 {
     class ElectricCar : Car
     {
+        public override string EngineStart(bool hasKey)
+        {
+            return "silence";
+        }
     }
-
-    //public string EngineStart(bool hasKey)
-    //{
-    //    return base.EngineStart(hasKey);
-    //}
 }
