@@ -67,20 +67,30 @@ Questions to keep in mind -
 	A- Scalability is a system's ability to adapt to an increase or decrease in demand
 		Scale out/in - This refers to creating more resources by adding more infrastructure ie. more VMs storage etc.
 		Scale up/down - This refers to adding more resources to your in place infrastructure ie larger storage units
-- What is Hierarchy for creating a resource in Azure?
+- What is the hierarchy for creating a resource in Azure?
+	A- The resource hierarchy for Azure resources is Subscription/ Resource Group/ Resource
 - What are the default entities Table Storage has?
+	A- Partition key and row key. The row key must be unique.
 - What is the Hierarchy of Table storage?
+	A- In addition to the subscription and resource group a table storage hierarchy is Storage Account/ Table/ Entities
 - What is max size supported for Queue storage?
 	A- A queue storage account can support up to 500 TB, but each message can only be 64 KB
 - Does Queue Storage support first-in-first-out model? explain?
 	A- No, a message in queue storage only leaves when its condition is met or it is dequeued either
 	manually or an automated dequeue condition is met
 - What are the Protocals followed by file storage?
+	A- Server Message Bus(SMB) for windows systems and REST/HTTP(File Rest api)
 - What is the Hierarchy of File storage?
+	A- The hierarchy of file storage is Storage Account/ File Storage or container/ Files and Folders
 - What are common Access Control Features? explain?
+	A- Account Keys- come in primary and secondary, provide full access and should be used sparingly
+	   Storage Access Signature(SAS)- can be given more freely and can be limited to restrict access and functionallity
+	   Role Based Access Control(RBAC)- associated with an identity, can control management and data layer access
 - Explain the kinds of Encryption w.r.t Data security?
 - What are the types of SAS blob storage supports?
+	A- blob storage supports Service SAS which restricts access to a specific service.
 - What are the RBAC types?
+	A- Management Actions and Data Actions
 - Explain Azure Data Box?
 - Explain CDN?
 - Explain ADLS?
