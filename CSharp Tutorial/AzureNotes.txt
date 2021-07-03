@@ -111,16 +111,33 @@ Questions to keep in mind -
 - What are ADLS connectivity types?
 	A- https://www.youtube.com/watch?v=2uSkjBEwwq0
 	   Windows Azures Storage Blob(WASB): Classic way of connecting using the original drivers used to leverage Blob storage
-	   but contains significant storage degradation
+	   but contains significant storage degradation. Works nicely with older SDKs
 	   Azure Blob File System(ABFS): Usable with Hadoop, this is an updated driver using ADLS Rest API
 - What is the difference b/w Blob & ADLS?
+	A- ADLS supports a true file structure whereas blob storage has a psuedo file structure made up of objects
+	   ADLS supports a hierarchical namespace
 - Explain Blobfuse?
+	A- Allows a user to mount a blob storage onto a linux machine using libfuse. This allows the user to use the blob storage
+	   the same way they would use any other storage system on their local machine the difference being  the blobfuse storage
+	   is actually being hosted in the cloud. Supports parallel download and upload and can be cached locally
 - Explain NFS?
+	A- https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to?tabs=azure-powershell
+	   Mount a blob storage account to a Linux VM over a virtual network, is configured to only accept traffic over the VNet
 - What is the difference b/w Blobfuse & NFS?
+	A- NFS is entirely cloud based so local caches aren't created by default or accessable offline. NFS supports hierarchical
+	   namespace
+- What is hierarchical namespace?
+	A- A tree-like structure where a user with RBAC permissions has access to sub-namespaces due to policy inheritance. A user
+	   with access to a namespace doesn't automatically have access to parallel namespace trees
 - Explain StaticWebpage?
+	A- A webpage that changes very infrequently and is typically fully loaded when it it requested, and has the same information
+	   for all users
 - Explain Static to dynamic difference?
+	A- Static webpages are user independent and are not connected to a database whereas a dynamic webpage is connected to a
+	   database and different parts of the page can be loaded in or changed at anytime.
 - What is VPN Gateway?
-
+	A- A corridor between resources across different networks. Typically used to connect on-prem to cloud, connection is 
+	   established over public internet but is encrypted
 
 Deployment models -
 	public cloud - Azure, AWS IMB Cloud
@@ -252,8 +269,15 @@ Data Lake – Management and Security:
 	Blob storage functionality is still available
 		Access tie and lifecycle management
 		Global scale
-	Security (including features from Blob storage
+	Security (including features from Blob storage)
 Connectivity:
+	WASB-
+		1) original driver used to leverage blob storage
+		2) prior to ADLS Gen2 this helped map file system semantics
+		3) Contained significant performance degradation
+	ABFS-
+		1) updated driver using ADLS Rest API
+		2) improved performance, able to leverage hierarchical file system and operational optimizations
 
 BlobFuse – open source project developed to provide a virtual file system backed by Azure Blob storage
 Uses libfuse open source library to communicate with the Linux FUSE kernel model and implements the file system operations using the Azure Storage Blob REST APIs
