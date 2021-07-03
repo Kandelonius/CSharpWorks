@@ -90,11 +90,29 @@ Questions to keep in mind -
 - What are the types of SAS blob storage supports?
 	A- blob storage supports Service SAS which restricts access to a specific service.
 - What are the RBAC types?
-	A- Management Actions and Data Actions
+	A- Management Actions: actions on the resources ie file storage or blob storage.
+	   Data Actions: actions on the data inside the storage
 - Explain Azure Data Box?
+	A- Azure Data Box is a way of moving on-premesis data to the cloud, often used when the amount of data being tranfered
+	   is too large to be efficiantly transferred over the internet. A user prepares their data to be shipped to the data
+	   center, the physical drives are then shipped to the center and there the data is copied to the storage account then
+	   the drives are sent back to the user
+	   Data box heavy: Capacity 1PB, weight 500+ lb
+	   Data Box: Capacity 100TB, weight 50 lb
+	   Data Box Disk: capacity 8TB can be ordered in packs of up to 4 to total 40TB
 - Explain CDN?
+	A- Content Delivery Network(CDN) is a way to efficiently deliver content to users who are far away from where the data
+	   is primarily being stored, so it can be accessed quickly. If the hosting server for some static data is in western US
+	   but the client is in South Africa it would take a long time for the data to reach the user when it's requested, so a
+	   CDN will cache the data in a closer region when the user calls it so subsequent requests are quicker
 - Explain ADLS?
+	A- Azure Data Lake Storage(ADLS) is designed for large volumes of unstructured data to be processed quickly and is good
+	   for encrypted processing of analytical data such as data being used in data science modeling
 - What are ADLS connectivity types?
+	A- https://www.youtube.com/watch?v=2uSkjBEwwq0
+	   Windows Azures Storage Blob(WASB): Classic way of connecting using the original drivers used to leverage Blob storage
+	   but contains significant storage degradation
+	   Azure Blob File System(ABFS): Usable with Hadoop, this is an updated driver using ADLS Rest API
 - What is the difference b/w Blob & ADLS?
 - Explain Blobfuse?
 - Explain NFS?
