@@ -29,10 +29,10 @@ Questions to keep in mind -
 18-Difference between protected and internal access specifier?
 19-Difference between Static and non-static method in c#?
 20-Difference between virtual and abstract method?
-21-What is extension method?
-22-What is partial method?
-23-What is sealed class?
-24-What is Constructor in C#?
+21-What is an extension method?
+22-What is a partial method?
+23-What is a sealed class?
+24-What is a Constructor in C#?
 25-Difference between static and non-static Constructor?
 26-What is difference between default & parametrized constructor?
 27-Difference between ref & out parameters in C#?
