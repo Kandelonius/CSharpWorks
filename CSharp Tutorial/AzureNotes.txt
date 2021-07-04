@@ -119,13 +119,13 @@ Questions to keep in mind -
 	   ADLS supports a hierarchical namespace
 - Explain Blobfuse?
 	A- Allows a user to mount a blob storage onto a linux machine using libfuse. This allows the user to use the blob storage
-	   the same way they would use any other storage system on their local machine the difference being  the blobfuse storage
+	   the same way they would use any other storage system on their local machine the difference being the blobfuse storage
 	   is actually being hosted in the cloud. Supports parallel download and upload and can be cached locally
 - Explain NFS?
 	A- https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support-how-to?tabs=azure-powershell
 	   Mount a blob storage account to a Linux VM over a virtual network, is configured to only accept traffic over the VNet
 - What is the difference between Blobfuse & NFS?
-	A- NFS is entirely cloud based so local caches aren't created by default or accessable offline. NFS supports hierarchical
+	A- Blobfuse focusses on mounting a file system, but NFS focusses on mounting containers. NFS supports hierarchical
 	   namespace
 - What is hierarchical namespace?
 	A- https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace
@@ -293,6 +293,14 @@ system operations using the Azure Storage Blob REST APIs
 	allows multiple nodes to mount the same container for read-only scenarios
 	authenticates using storage key, SaS, Managed Identity and Serivce Principal Names(SPN)
 Network File System(NFS) 3.0 – Allows a user to mount blob storage to a Linux VM
+Mounting NFS:
+	Register NFS protocol to your subscription
+	Verify that it is registered
+	Create a VNet
+	Configure network security
+	Create and configure the storage account to accept traffic only from the VNet
+	Create a container in the storage account
+	Mount the container
 
 Static Web Page -
 	A web page that displays the same information to all users and is not customazable, and suited to content that 
