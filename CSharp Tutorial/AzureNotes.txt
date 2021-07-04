@@ -38,6 +38,9 @@ Questions to keep in mind -
 		Queue Storage - flat storage for unstructured data, supports massive scale, often includes metadata(tags)
 		Table Storage - Simple storage system for non-relational semi-structured data
 		File Storage - Managed, traditional file sharing like solution
+- What are the components of a storage account url?
+	A- Account name and service name
+	   https://<account name>.<service name>.core.windows.net
 - Explain Storage Account Properties?
 	A-
 		Account type - Blob, Queue, Table, File - See above
@@ -54,7 +57,7 @@ Questions to keep in mind -
 	A-
 		LRS(Locally-redundant storage) replication to 3 other units within the region
 		GRS(Geo-redundant storage) replication to a secondary region, includes LRS-like replication
-		ZRS(Zone-redundant storage) replication to 3 availability zones within the region
+		ZRS(Zone-redundant storage) replication to up to 3 availability zones within the region
 		GZRS(Geo-zone-redundant storage) a combination of ZRS and GRS
 - Types of Blob Storage?
 	A- 
@@ -132,15 +135,16 @@ Questions to keep in mind -
 	   A tree-like structure where a user with RBAC permissions has access to sub-namespaces due to policy inheritance. A user
 	   with access to a namespace doesn't automatically have access to parallel namespace trees. It is much more efficient 
 	   then a typical object style directory hierarchy
-- Explain StaticWebpage?
+- Explain Static Webpage?
 	A- A webpage that changes very infrequently and is typically fully loaded when it it requested, and has the same information
 	   for all users
-- Explain Static to dynamic difference?
+- Explain the difference between static and dynamic webpages?
 	A- Static webpages are user independent and are not connected to a database whereas a dynamic webpage is connected to a
 	   database and different parts of the page can be loaded in or changed at anytime.
 - What is VPN Gateway?
 	A- A corridor between resources across different networks. Typically used to connect on-prem to cloud, connection is 
-	   established over public internet but is encrypted
+	   established over public internet but is encrypted for added security
+
 
 Deployment models -
 	public cloud - Azure, AWS IBM Cloud
