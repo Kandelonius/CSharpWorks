@@ -311,4 +311,56 @@ Static Web Page -
 	rarely or never needs to be updated
 
 PowerShell --
-	built into .NET framework
+	built into .NET framework and is a scripting as well as an interactive command environment
+	allows for easier automation of repetitive tasks
+
+Benefits of PowerShell-
+	Trusted by System Administrators
+	Most GUIs are PowerShell front ends
+	Easy automation
+	Scalable management
+	Manipulate server and workstation components
+	Prepare for Microsoft certifications
+	Can be used to create text files, backups, parse files and data
+
+PowerShell Modules-
+	to find installed modules: Get-Module -ListAvailable
+	to find already installed modules: Get-Module
+	to find all commands in a module: Get-Command -Module <module-name>
+	to get help for commands in a module Get-Help <command-name>
+	to download and install the help files for commands: Update-Help -Module <module-name>
+
+Important commands in PowerShell-
+	command-let to get information on how to use command-lets: Get-Help
+	command-let to get only commands imported into PowerShell: Get-Command
+	command-let to get objects that represent stopped and started services on a computer: Get-Service
+
+PowerShell Variables- Variable names can include the underscore character and any alphanumeric character. They are
+specified using the '$' character followed by the variable name
+	PS>$loc creates a variable named loc
+	PS>$loc=Get-Location sends the output of get location to $loc
+	PS>$loc|Get-Member -MemberType Property Uses Get-Member to display information about the contents of the variable
+
+PowerShell Pipelines: uses the '|' character to send the result of the preceeding command to the next command
+	Command-1|Command-2|Command-3
+
+Creating a VM using PowerShell-
+	Create Resource group
+	select VM size
+	select Image aka OS
+	Note Administrator account details
+	Inbound Ports: RDP(3389) for Windows and SSH(22) for Linux
+
+Create Storage Account using PowerShell-
+	Create Resource group
+	select region
+	select SKU ex. Standard_LRS
+	account kind ex. StorageV2
+
+Create Users, groups using PowerShell-
+	Create a User
+	Create a Group
+	Add the user to the group
+
+
+	
