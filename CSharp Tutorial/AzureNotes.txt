@@ -147,6 +147,9 @@ Questions to keep in mind -
 - What is VNet Peering?
 	A- A connection between two networks that allows for a low latency private connection between the networks so they can
 	   act as if they were on the same network
+- What is the difference between public and private IP addresses?
+	A- Private IP is used to communicate within a network whereas public is used to communicate outside the network ie. on the
+	   internet
 
 Deployment models -
 	public cloud - Azure, AWS IBM Cloud
@@ -377,3 +380,31 @@ Information for creating a VPN gateway: It can take up to 45 minutes to provisio
 	Virtual Network: associate your VPN gateway with a VNet
 	SKU: the SKU will affect the number of tunnels you can have and aggregate throughput benchmark
 	IP Address: Gateways need a public IP in its configuration in order to enable communication with remote networks
+
+Configuring private and public IP Addresses: IP addresses are used to communicate with Azure resources, on-premises network
+and the internet. There are two types of IP Address Private and Public.
+	Private IP Address: used for communication within Azure VNet and on-premises network, when you use a VPN gateway or
+	ExpressRoute circuit to extend your network to Azure
+	Public IP: used for communication with the internet including Azure public facing services
+
+Routes: Routes are used to direct traffic in a virtual network between different resources and subnets a distance between
+two resources is known as a hop
+Order of operations for building a route system:
+	1) Create the rout table- This is very straightforward but be mindful of the Border Gateway Protocol(BGP) route propagation
+	settings. Most of the time you will want this enabled because routes will automatically be added to the route table of the 
+	subnet with BGP propagation enabled
+	2) Whe creating a route there are several next hop types:
+		- using virtual appliance
+		- using VNet gateway
+		- internet
+		- none
+	3) Each subnet can have zero or one route table associated with it, not multiples
+
+Azure Domain Name Service(DNS): a hosting service for DNS Domains, DNS provides name resolution by resolving a website or
+service name to its IP address.
+Elements of DNS:
+	Root Domain- Top level of the DNS Hierarchy
+	Top-Level Domain- Under the domain ex. com, org, gov, edu
+	Second-Level Domain- private domains that are owned and managed locally i.e. Contoso
+	Sub-Domain- Under second level i.e. sales.contoso.com
+	Individual Machine- the computer which the DNS is resolved to i.e. mail.yahoo.com
