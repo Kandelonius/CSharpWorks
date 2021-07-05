@@ -144,7 +144,9 @@ Questions to keep in mind -
 - What is VPN Gateway?
 	A- A corridor between resources across different networks. Typically used to connect on-prem to cloud, connection is 
 	   established over public internet but is encrypted for added security
-
+- What is VNet Peering?
+	A- A connection between two networks that allows for a low latency private connection between the networks so they can
+	   act as if they were on the same network
 
 Deployment models -
 	public cloud - Azure, AWS IBM Cloud
@@ -362,5 +364,16 @@ Create Users, groups using PowerShell-
 	Create a Group
 	Add the user to the group
 
+VNet Peering: Create peered networks in the same subscription between two different subscriptions. Peered networks have
+low latency, high bandwidth connection and have a private connection as if they are in the same VNet
 
-	
+VNet to VNet: can connect your VNets using a VPN connection, using this connection you can create a VPN gateway in each
+virtual network. VPN gateway can also be used to provide a connection to an on-premises network. This is called a 
+site-to-site connection. In both cases a secure tunnel using IPsec/IKE provides the communication between networks
+
+Information for creating a VPN gateway: It can take up to 45 minutes to provision VPN Gateway
+	Name and Gateway type: name your gateway and use VPN gateway type
+	VPN Type: most VPN types are route based. Rouge based VPN does not reference VPN tunnel
+	Virtual Network: associate your VPN gateway with a VNet
+	SKU: the SKU will affect the number of tunnels you can have and aggregate throughput benchmark
+	IP Address: Gateways need a public IP in its configuration in order to enable communication with remote networks
