@@ -17,17 +17,32 @@ Questions to keep in mind -
     A- "Just In Time" compiler converts code from human readable()
 6-Difference between Implicit & explicit Conversion?
     A- Implicit is lower precision to higher precision and has no data loss. int can be implicitly converted to double
-       Explicit is higher level to lower level precision
-       and does have data loss. Explicit requires casting
+       Explicit is higher level to lower level precision and does have data loss. Explicit requires casting
 7-Difference boxing & unboxing in C#?
-8-What are operators in C#? 
-9-What are && and || operators? 
+    A- Boxing is converting a value type into an object type
+       Unboxing is taking an object type and converting it to a value type, and it requires casting
+8-What are operators in C#?
+    A- operators allow us to do things such as compare things, perform calculations, build and initialize things etc. they
+       include but are not limited to arithmatic, boolean, unary, and logical operators
+9-What are && and || operators?
+    A- These are logical operators:
+        && is the and operator and is used when both conditions must be true
+        || is the or operator and is used when only one condition needs to be true
 10-What is difference between if else and switch case? 
-11-Difference between while do-while loop?  
+    A- switch is overall much quicker than if else because it goes straight to the relevant condition whereas an if else
+       statement will try every condition until it gets to the correct condition
+11-Difference between while and do-while loop?
+    A- A while loop will check the condition at the begining of the loop, so if the condition is already met when you enter the
+       loop the code inside will never run. A do-while loop will always run at least once and check the condition at the end of
+       each iteration
 12-Difference between for and foreach loop? 
 13-What is difference between break and continue keyword? 
+    A- In a switch statement if a break is reached the switch will terminate but if a continue is reached the program will pass
+       control to the next iteration and allow the method to keep running
 14-What is array in C#?
 15-Difference between single dimensional array and mutli-dimensional array?
+    A- a single dimensional array is a collection of things, but is only a single row of values whereas a multi-dimensional array
+       has rows and columns
 16-What is access specifier?
 17-What is default access specifier of a class?
 18-Difference between protected and internal access specifier?
