@@ -408,3 +408,24 @@ Elements of DNS:
 	Second-Level Domain- private domains that are owned and managed locally i.e. Contoso
 	Sub-Domain- Under second level i.e. sales.contoso.com
 	Individual Machine- the computer which the DNS is resolved to i.e. mail.yahoo.com
+
+Network Security Group(NSG): can be used to limit network traffic to resources in a VNet. NSG contains a list of security 
+rules allowing or denying inbound and outbound traffic. NSGs are associated with subnet or network interface
+
+Load Balancer: provides a higher level of availability and scale by spreading incomming request across virtual machines. Can
+create a load balancer within the Azure Portal to support inbound and outbound scenarios, can distribute traffic internally
+within the Azure infrastructure
+	Load balancers are placed outside of VNet and subnet, but manage servers within a VM Scale set inside the two network layers
+
+Azure cache for Redis:
+	In memory data store based on open-source software Redis
+	Secure, dedicated Redis cache managed by Microsoft
+	Used as a data store, distribution non-relational database or message broker
+	imporves performance and scalability when heavily using backend data store
+	Key-value pair based storage
+	*Great for Cache-aside, content caching, user session caching, job and message queuing, distributed transactions
+Redis tiers:
+	Basic: single node, sizes 250MB - 53GB. Ideal for non-critical workloads
+	Standard: Two-node replication with high-avaiability SLA
+	Premium: Enterprise-ready. More features with higher throughput and lower latency
+
