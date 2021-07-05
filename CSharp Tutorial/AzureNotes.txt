@@ -158,6 +158,10 @@ Questions to keep in mind -
 	   Streamlined Development- integrated development and troubleshooting tools
 	   CI/CD- features such as staging slots
 	   Azure integration- used with VNets and Azure AD
+- What is the resource hierarchy for web apps?
+	A- resource group / App service plan / app
+- What are some ways to deploy a web app?
+	A- Visual Studio / GitHub / OneDrive / BitBucket / Azure Repos
 
 Deployment models -
 	public cloud - Azure, AWS IBM Cloud
