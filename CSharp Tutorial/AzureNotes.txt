@@ -429,3 +429,22 @@ Redis tiers:
 	Standard: Two-node replication with high-avaiability SLA
 	Premium: Enterprise-ready. More features with higher throughput and lower latency
 
+Azure App Service:
+Key Feature-
+	Infrastructure Management- no need to patch, maintain, or manage underlying infrastructure
+	High Availability- built-in support for high availability. Azure app service runs apps on multiple nodes
+	Auto-Scaling- leverage familiar auto-scaling capabilities to ensure your app meets customer demand
+	Streamlined Development- integrated development and troubleshooting tools to streamline development
+	Continuous Integration / Continuous Deployment(CI/CD)- features such as staging slots
+	Azure Integration- integration with many Azure services and features, such as VNets and Azure AD
+Pricing-
+	Shared- cheaper plans with fewer features where your apps can run on the same computer as other customers
+	Dedicated- only apps belonging to the App Service Plan run on these dedicated compute nodes, includes additional features
+	Isolated- Entirely dedicated and isolated to a customer's network. Includes greater scale-out capacity
+Resource Hierarchy: Resource Group - App Service Plan - Web App
+Deployment from various sources: GitHub, OneDrive, Dropbox, Azure Repos, Bitbucket etc.
+Deployment slots:
+	Production- The only mandatory slot, hosts your primary / live app
+	Staging- This is a user generated slot that generally holds a version of the app that is used for back-up or updates
+			 when the app needs to be taken down to clear cache or updated to a new version
+	Swap Operations- changes out one deployment slot for another
