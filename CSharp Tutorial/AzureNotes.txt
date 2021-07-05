@@ -54,7 +54,7 @@ Questions to keep in mind -
 		Replication - LRS, GRS, ZRS, GZRS - See below
 		Access Tier - Hot(immediate access), Cool(occasional access), Archive(rare access long-term)
 - Explain the types of Replication?
-	A-
+	A- https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
 		LRS(Locally-redundant storage) replication to 3 other units within the region
 		GRS(Geo-redundant storage) replication to a secondary region, includes LRS-like replication
 		ZRS(Zone-redundant storage) replication to up to 3 availability zones within the region
@@ -129,7 +129,7 @@ Questions to keep in mind -
 	   Mount a blob storage account to a Linux VM over a virtual network, is configured to only accept traffic over the VNet
 - What is the difference between Blobfuse & NFS?
 	A- Blobfuse focusses on mounting a file system, but NFS focusses on mounting containers. NFS supports hierarchical
-	   namespace
+	   namespace. Blobbuse mounts file systems specifically whereas NFS mounts more generic containers
 - What is hierarchical namespace?
 	A- https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace
 	   A tree-like structure where a user with RBAC permissions has access to sub-namespaces due to policy inheritance. A user

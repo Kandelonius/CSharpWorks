@@ -1,5 +1,6 @@
 Questions to keep in mind -
 
+
 1-What is .NET Framework?
     A- A developer platform made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
     and libraries used for building different types of applications.
@@ -14,7 +15,10 @@ Questions to keep in mind -
     still in-tact until something else is assigned to it.
 5-What is JIT Compiler? 
     A- "Just In Time" compiler converts code from human readable()
-6-Difference between Implicit & explicit Conversion? 
+6-Difference between Implicit & explicit Conversion?
+    A- Implicit is lower precision to higher precision and has no data loss. int can be implicitly converted to double
+       Explicit is higher level to lower level precision
+       and does have data loss. Explicit requires casting
 7-Difference boxing & unboxing in C#?
 8-What are operators in C#? 
 9-What are && and || operators? 
@@ -40,11 +44,22 @@ Questions to keep in mind -
 29-Difference between abstract class and interface?
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
-30- What is inheritance?
+30-What is inheritance?
 31-What is DBMS?
 32-What is collection in C#?
 33-What is difference between Stack and Queue?
 34-Difference between ArrayList and List?
+1-Is C# is case sensitive programing language?
+    A- Yes, there is a distinct difference between a variable, method, class etc. that has capitals and one that doesn't even
+       if they otherwise spell the same word
+2-What is the use of var keyword?
+4-What is access specifier in C-Sharp?
+5-What is the default access specifier of class and class members?
+6-Difference between .exe and .dll.
+7-What is Unary operator?
+8-What is namespace?
+9-What is non-static or instance method?
+10-Difference between static and non-static?
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
@@ -230,18 +245,7 @@ Access Specifier in CSharp
     in the same class or in a type that is derived from that class. 
 
 ----------------------------------------------11th June 2021------------------------
-1-Is C# is case sensitive programing language?
-2-What is the use of var keyword?
-3-Difference between while and do-while loop?
-4-What is access specifier in C-Sharp?
-5-What is the default access specifier of class and class members?
-6-Difference between .exe and .dll.
-7-What is Unary operator?
-8-What is namespace?
-9-What is non-static or instance method?
-10-Difference between static and non-static?
 
-----------------------------------------------------------------------------------------------
 Abstract Method in C-Sharp - The abstract keyword enables you to create classes and class members that are 
 incomplete and must be implemented in a derived class
     1-If you would like to create an abstract method then the class must also be abstract.
