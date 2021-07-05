@@ -150,6 +150,14 @@ Questions to keep in mind -
 - What is the difference between public and private IP addresses?
 	A- Private IP is used to communicate within a network whereas public is used to communicate outside the network ie. on the
 	   internet
+- What are the key features App Service supports?
+	A- 
+	   Infrastructure Management- No need to patch, maintain etc.
+	   High Availability- Runs apps on multiple nodes
+	   Auto-Scaling- auto-scale to meet customer demand
+	   Streamlined Development- integrated development and troubleshooting tools
+	   CI/CD- features such as staging slots
+	   Azure integration- used with VNets and Azure AD
 
 Deployment models -
 	public cloud - Azure, AWS IBM Cloud
