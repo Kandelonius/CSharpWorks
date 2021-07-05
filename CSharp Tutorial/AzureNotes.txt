@@ -448,3 +448,40 @@ Deployment slots:
 	Staging- This is a user generated slot that generally holds a version of the app that is used for back-up or updates
 			 when the app needs to be taken down to clear cache or updated to a new version
 	Swap Operations- changes out one deployment slot for another
+Monitoring Metrics:
+	Azure Monitor- app service leverages this to provide access to metrics (as well as autoscale), for App Service apps
+	Metrics- available by default and require no additional configuration for your app
+	Quotas- provides a view of the current utilization of important resources, with respect to App Service Plan limitations
+Monitoring Logs:
+	Integrated logging- plans can expose log information both through the platform, and through monitor logs
+	Diagnostic Logs- gain access to application, web server, and other log information for Windows and Linux apps. Can be
+					 forwarded to Log Analytics
+	Activity Logs- for resource level events, this includes information about the operations (who/when/what) for your app
+Application Insights:
+	Supports many environments- Sollutions built in .NET, Node.js, Java, Python are supported (wherever the solution is hosted)
+	Usage analysis- includes a range of features to understand how users use your app (e.g. retention)
+	Metrics- Explore metrics over time (metrics explorer) or view them in near-real time (metrics streams)
+	Application Map- view connectivity between components to help understand health and perfomance
+	Application profiler- analyze and trace application performance, and gain an understanding of "hot" code
+	Alerts- configure alerts for application performance and availability issues
+Application Insights Architecture:
+	Application Insights-
+	Instrumentation(code)- refers to the SDKs which were deployed
+	Instrumentation(codeless)- uses an agent to collect data
+Azure Batch Service:
+	Azure batch is an IaaS offering that runs large scale parallel and HPC jobs
+	Use this service to run large scale parallel and high performance computing batch jobs
+	Azure batch service will automatically manage the pool of nodes
+	wil automatically install the required applications on the virtual machines
+	can also automatically schedule the jobs to run on the virtual machines
+	Examples of workloads you can run using batch service are
+		3D image rendering
+		Financial risk modeling using Monte Carlo simulations
+		Image analysis
+		Media transcoding
+Azure batch workflow components:
+	Storage account(holds input/output)
+	Batch addount(top level container)
+	Pools(VM size and quantity)
+	Jobs(logical group for tasks)
+	Tasks(actual items of work)
