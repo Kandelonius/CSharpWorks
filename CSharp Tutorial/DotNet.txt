@@ -1,101 +1,105 @@
 Questions to keep in mind -
 
-1-What is .NET Framework?
+-What is .NET Framework?
     A- A developer platform made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
     and libraries used for building different types of applications.
-2-What is C#? 
+-What is C#? 
     A- A type safe object oriented programming language built on the .NET Framework.
-3-What is difference between value type and reference type? 
+-What is difference between value type and reference type? 
     A- A value type(int, bool, char) is stored on the stack and has a default value of 0 requires no
     garbage collection whereas a reference type(string, class, array) is stored in heap memory and
     does require garbage collection to clean up.
-4-What is garbage collection?
+-What is garbage collection?
     A- A process where unused memory is reallocated so it can be used for some other purpose. This memory is technically
     still in-tact until something else is assigned to it.
-5-What is JIT Compiler? 
+-What is JIT Compiler? 
     A- "Just In Time" compiler converts code from human readable()
-6-Difference between Implicit & explicit Conversion?
+-Difference between Implicit & explicit Conversion?
     A- Implicit is lower precision to higher precision and has no data loss. int can be implicitly converted to double
        Explicit is higher level to lower level precision and does have data loss. Explicit requires casting
-7-Difference boxing & unboxing in C#?
+-Difference boxing & unboxing in C#?
     A- Boxing is converting a value type into an object type
        Unboxing is taking an object type and converting it to a value type, and it requires casting
-8-What are operators in C#?
+-What are operators in C#?
     A- operators allow us to do things such as compare things, perform calculations, build and initialize things etc. they
        include but are not limited to arithmatic, boolean, unary, and logical operators
-9-What are && and || operators?
+-What are && and || operators?
     A- These are logical operators:
         && is the and operator and is used when both conditions must be true
         || is the or operator and is used when only one condition needs to be true
-10-What is difference between if else and switch case? 
+-What is difference between if else and switch case? 
     A- switch is overall much quicker than if else because it goes straight to the relevant condition whereas an if else
        statement will try every condition until it gets to the correct condition
-11-Difference between while and do-while loop?
+-Difference between while and do-while loop?
     A- A while loop will check the condition at the begining of the loop, so if the condition is already met when you enter the
        loop the code inside will never run. A do-while loop will always run at least once and check the condition at the end of
        each iteration
-12-Difference between for and foreach loop?
+-Difference between for and foreach loop?
     A- a for loop will iterate as long as the predefined condition is met whereas a foreach loop will iterate through all members
        of the data set from start to finish
-13-What is difference between break and continue keyword? 
+-What is difference between break and continue keyword? 
     A- In a switch statement if a break is reached the switch will terminate but if a continue is reached the program will pass
        control to the next iteration and allow the method to keep running
-14-What is an array in C#?
+-What is an array in C#?
     A- an array is a reference type collection of data that is of fixed size and is type safe with a zero index
-15-Difference between single dimensional array and mutli-dimensional array?
+-Difference between single dimensional array and mutli-dimensional array?
     A- a single dimensional array is a collection of things, but is only a single row of values whereas a multi-dimensional array
        has rows and columns
-16-What is access specifier?
+-What is access specifier?
     A- access specifiers such as private, public, protected, internal, and protected internal are ways to control the extent to
        which a class can be accessed and the members of that class can be accessed
-17-What is the default access specifier of class and class members?
+-What is the default access specifier of class and class members?
     A- Class: the default access specifier of a class is internal meaning it is only accessible within files in the same assembly
        Class members: the default access specifier for class members is private
        Namespaces: the default for namespaces is public
-18-Difference between protected and internal access specifier?
+-Difference between protected and internal access specifier?
     A- Protected members can be inherited both inside the assembly and outside, Internal members can only be inherited within the
        assembly
-19-What is non-static or instance method?
-    A- non-static method requires you to instanciate
-20-Difference between Static and non-static method in c#?
-21-Difference between virtual and abstract method?
+-Difference between Static and non-static method in c#?
+    A- non-static method requires you to instanciate an object to use the method, we just need to use the name of the class
+-Difference between virtual and abstract method?
     A- virtual methods must have a body but abstract method cannot. If you inherit the class with the abstract method you must
        override the abstract method.
-22-What is an extension method?
-23-What is a partial method?
-24-What is a sealed class?
+-What is an extension method?
+-What is a partial method?
+-What is a sealed class?
     A- A sealed class cannot be inherited
-25-What is a Constructor in C#?
+-What is a Constructor in C#?
     A- A constructor is a special method inside a class that allows us to instanciate that class and create an object of that class
-26-Difference between static and non-static Constructor?
-27-What is difference between default & parametrized constructor?
-28-Difference between ref & out parameters in C#?
-29-Difference between abstract class and interface?
+-Difference between static and non-static Constructor?
+-What is difference between default & parametrized constructor?
+-Difference between ref & out parameters in C#?
+-Difference between abstract class and interface?
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
-30-What is inheritance?
+-What is inheritance?
     A- passing down members of a class allowing the inheriting class to use the same method as it is or modified allowing for code
        reusability
-31-What is DBMS?
-32-What is collection in C#?
-33-What is difference between Stack and Queue?
+-What is DBMS?
+    A- a data base management system(DBMS) is a collection of interrelated data that helps in the efficient retrieval of information
+-What is a collection in C#?
+    A- a collection is a way to group and manage data, arrays are one example allowing us to creat and work with a fixed number
+       of strognly typed objects
+-Difference between generic or non-generic collection?
+    A- generics are type safe meaning all items in the collection must be the same type
+-What is difference between Stack and Queue?
     A- a stack follows a 'first in last out' order whereas a queue follows 'first in first out'
-34-Difference between ArrayList and List?
-35-What is params parameters in C#?
-36-Is C# is case sensitive programing language?
+-Difference between ArrayList and List?
+-What is params parameters in C#?
+-Is C# is case sensitive programing language?
     A- Yes, there is a distinct difference between a variable, method, class etc. that has capitals and one that doesn't even
        if they otherwise spell the same word
-37-What is the use of var keyword?
-38-Difference between .exe and .dll.
+-What is the use of var keyword?
+-Difference between .exe and .dll.
     A- exe is where the main method is and what is used to start a program, dll is a class library that can be used by multiple
        programs
-39-What is Unary operator? (i++, ++i, i--, --i)
+-What is Unary operator? (i++, ++i, i--, --i)
     A- Unary operators are pre and post increment and pre and post decrement operators and these will add or subtract one to
        the variable as indicated, pre versions will perform the action when it is called whereas post versions do so as the
        action closes or at the closing semi-colon
-40-What is namespace?
+-What is namespace?
     A- a collection of classes, structs, interfaces etc. Helps to organize code and define scope
-41-What is the difference between abstract class and interface? https://www.youtube.com/watch?v=uA_6W4aWRFg
+-What is the difference between abstract class and interface? https://www.youtube.com/watch?v=uA_6W4aWRFg
     A- an inheriting class can inherit multiple interfaces but only one abstract class, abstract class are more suited to
        defining properties and things that are fully utilized by all inheriting classes whereas interfaces are better for 
        methods that might not all be used
