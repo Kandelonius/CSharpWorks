@@ -56,8 +56,11 @@ Questions to keep in mind -
     A- Protected members can be inherited both inside the assembly and outside, Internal members can only be inherited within the
        assembly
 19-What is non-static or instance method?
+    A- non-static method requires you to instanciate
 20-Difference between Static and non-static method in c#?
 21-Difference between virtual and abstract method?
+    A- virtual methods must have a body but abstract method cannot. If you inherit the class with the abstract method you must
+       override the abstract method.
 22-What is an extension method?
 23-What is a partial method?
 24-What is a sealed class?
@@ -71,25 +74,31 @@ Questions to keep in mind -
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
 30-What is inheritance?
+    A- passing down members of a class allowing the inheriting class to use the same method as it is or modified allowing for code
+       reusability
 31-What is DBMS?
 32-What is collection in C#?
 33-What is difference between Stack and Queue?
     A- a stack follows a 'first in last out' order whereas a queue follows 'first in first out'
 34-Difference between ArrayList and List?
 35-What is params parameters in C#?
-1-Is C# is case sensitive programing language?
+36-Is C# is case sensitive programing language?
     A- Yes, there is a distinct difference between a variable, method, class etc. that has capitals and one that doesn't even
        if they otherwise spell the same word
-2-What is the use of var keyword?
-6-Difference between .exe and .dll.
+37-What is the use of var keyword?
+38-Difference between .exe and .dll.
     A- exe is where the main method is and what is used to start a program, dll is a class library that can be used by multiple
        programs
-7-What is Unary operator? (i++, ++i, i--, --i)
+39-What is Unary operator? (i++, ++i, i--, --i)
     A- Unary operators are pre and post increment and pre and post decrement operators and these will add or subtract one to
        the variable as indicated, pre versions will perform the action when it is called whereas post versions do so as the
        action closes or at the closing semi-colon
-8-What is namespace?
+40-What is namespace?
     A- a collection of classes, structs, interfaces etc. Helps to organize code and define scope
+41-What is the difference between abstract class and interface? https://www.youtube.com/watch?v=uA_6W4aWRFg
+    A- an inheriting class can inherit multiple interfaces but only one abstract class, abstract class are more suited to
+       defining properties and things that are fully utilized by all inheriting classes whereas interfaces are better for 
+       methods that might not all be used
 
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
