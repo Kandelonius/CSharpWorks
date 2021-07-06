@@ -1,6 +1,5 @@
 Questions to keep in mind -
 
-
 1-What is .NET Framework?
     A- A developer platform made up of tools(Visual Studio, VSC, etc.), programming languages(C#, F#, Visual Basic),
     and libraries used for building different types of applications.
@@ -35,27 +34,39 @@ Questions to keep in mind -
     A- A while loop will check the condition at the begining of the loop, so if the condition is already met when you enter the
        loop the code inside will never run. A do-while loop will always run at least once and check the condition at the end of
        each iteration
-12-Difference between for and foreach loop? 
+12-Difference between for and foreach loop?
+    A- a for loop will iterate as long as the predefined condition is met whereas a foreach loop will iterate through all members
+       of the data set from start to finish
 13-What is difference between break and continue keyword? 
     A- In a switch statement if a break is reached the switch will terminate but if a continue is reached the program will pass
        control to the next iteration and allow the method to keep running
-14-What is array in C#?
+14-What is an array in C#?
+    A- an array is a reference type collection of data that is of fixed size and is type safe with a zero index
 15-Difference between single dimensional array and mutli-dimensional array?
     A- a single dimensional array is a collection of things, but is only a single row of values whereas a multi-dimensional array
        has rows and columns
 16-What is access specifier?
-17-What is default access specifier of a class?
+    A- access specifiers such as private, public, protected, internal, and protected internal are ways to control the extent to
+       which a class can be accessed and the members of that class can be accessed
+17-What is the default access specifier of class and class members?
+    A- Class: the default access specifier of a class is internal meaning it is only accessible within files in the same assembly
+       Class members: the default access specifier for class members is private
+       Namespaces: the default for namespaces is public
 18-Difference between protected and internal access specifier?
-19-Difference between Static and non-static method in c#?
-20-Difference between virtual and abstract method?
-21-What is an extension method?
-22-What is a partial method?
-23-What is a sealed class?
-24-What is a Constructor in C#?
-25-Difference between static and non-static Constructor?
-26-What is difference between default & parametrized constructor?
-27-Difference between ref & out parameters in C#?
-28-What is params parameters in C#?
+    A- Protected members can be inherited both inside the assembly and outside, Internal members can only be inherited within the
+       assembly
+19-What is non-static or instance method?
+20-Difference between Static and non-static method in c#?
+21-Difference between virtual and abstract method?
+22-What is an extension method?
+23-What is a partial method?
+24-What is a sealed class?
+    A- A sealed class cannot be inherited
+25-What is a Constructor in C#?
+    A- A constructor is a special method inside a class that allows us to instanciate that class and create an object of that class
+26-Difference between static and non-static Constructor?
+27-What is difference between default & parametrized constructor?
+28-Difference between ref & out parameters in C#?
 29-Difference between abstract class and interface?
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
@@ -63,18 +74,23 @@ Questions to keep in mind -
 31-What is DBMS?
 32-What is collection in C#?
 33-What is difference between Stack and Queue?
+    A- a stack follows a 'first in last out' order whereas a queue follows 'first in first out'
 34-Difference between ArrayList and List?
+35-What is params parameters in C#?
 1-Is C# is case sensitive programing language?
     A- Yes, there is a distinct difference between a variable, method, class etc. that has capitals and one that doesn't even
        if they otherwise spell the same word
 2-What is the use of var keyword?
-4-What is access specifier in C-Sharp?
-5-What is the default access specifier of class and class members?
 6-Difference between .exe and .dll.
-7-What is Unary operator?
+    A- exe is where the main method is and what is used to start a program, dll is a class library that can be used by multiple
+       programs
+7-What is Unary operator? (i++, ++i, i--, --i)
+    A- Unary operators are pre and post increment and pre and post decrement operators and these will add or subtract one to
+       the variable as indicated, pre versions will perform the action when it is called whereas post versions do so as the
+       action closes or at the closing semi-colon
 8-What is namespace?
-9-What is non-static or instance method?
-10-Difference between static and non-static?
+    A- a collection of classes, structs, interfaces etc. Helps to organize code and define scope
+
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
@@ -120,7 +136,6 @@ namespace MyNamespace
 4-Mobile Apps - Xamarin
 5-Web API 
 6-Game Application etc.
-
 -----------------------------------------------------------------------------
 
 Namespace - Is a collection of namesapces,classes,struct,enum,delegate,interface etc.- (PascalCase)
@@ -283,7 +298,7 @@ Extension Method in C#
     3-Class must be static class.
     4-Only the type have the rights to access this method.
 
-What is Constructor in CSharp?
+What is a Constructor in CSharp?
     Ans:-Constructor is a special type of method. It does not contain return type,it has the same name
     as we have the class name. Every class has a default constructor. And default Constructor will be 
     called automatically whenever you will create the instance or object of the class. And the role of
@@ -315,7 +330,7 @@ Constructor Types in C#
     5-Private Constructor
 
         --------------------------------------------15th June 2021----------------------------------------------
-    Interface in CSharp
+Interface in CSharp
     1-Whenever you will create a interface just keep 'I' as prefix with the interface name. It does not
     mandatory but it is a part of naming convention which you should follow.
     2-You will use interface keyword to create the interface and interface will contain only property, method,
@@ -382,7 +397,7 @@ Constructor Types in C#
     6-Enum will not allow any other data type except all int types.
 
  ------------------------------------------------------------------------------------
-  Class in CSharp
+Class in CSharp
     1-It is reference type and user define type.
     2-It gets memory on heap.
     3-GC is required for clean up.
@@ -391,7 +406,7 @@ Constructor Types in C#
     6-All pre-define reference type derive from class.
     7-We can define parameter less constructor.    
 
-    Struct In CSharp
+Struct In CSharp
     1-It is value type and user defined type.
     2-It gets memory on stack.
     3-GC not required.
