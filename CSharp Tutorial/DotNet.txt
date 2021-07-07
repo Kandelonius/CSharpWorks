@@ -67,8 +67,12 @@ Questions to keep in mind -
 -What is a Constructor in C#?
     A- A constructor is a special method inside a class that allows us to instanciate that class and create an object of that class
 -Difference between static and non-static Constructor?
--What is difference between default & parametrized constructor?
+-What is difference between default & parameterized constructor?
+    A- the default constructor calls an instance of the class with default values and requires no additional information, but the
+       parameterized constructor requires the fields with parameters to be intered to be called.
 -Difference between ref & out parameters in C#?
+    A- you must initialize the parameter of ref before passing it, but you do not need to initialize out. Passing by ref is useful
+       when the called method is also needed to modify the passed parameter, but out is useful when multiple values need to be returned
 -Difference between abstract class and interface?
     A- Abstract classes can have implementations for some of its members whereas interface members cannot have
     any implementations
