@@ -61,15 +61,15 @@ Questions to keep in mind -
 	   GZRS(Geo-zone-redundant storage) a combination of ZRS and GRS
 - Types of Blob Storage?
 	A- 
-		Block Blob - Used for streaming workloads, each blob consists of a sequence of blocks, 200 GB per blob
-		Page Blob - Used for random read/write workloads, blobs consist of an array of pages, 1TB per blob
+	   Block Blob - Used for streaming workloads, each blob consists of a sequence of blocks, 200 GB per blob
+	   Page Blob - Used for random read/write workloads, blobs consist of an array of pages, 1TB per blob
 - What is Disaster Recovery? Explain?
-	A- a system's ability to backup and restore data, apps and resources as needed. Azure supports
-	this by allowing users to regularly backup resources, connect on-prem to on-prem, connect on-prem to cloud etc.
+	A- a system's ability to backup and restore data, apps and resources as needed. Azure supports this by allowing
+	   users to regularly backup resources, connect on-prem to on-prem, connect on-prem to cloud etc.
 - What is Scalability? Explain it types?
 	A- Scalability is a system's ability to adapt to an increase or decrease in demand
-		Scale out/in - This refers to creating more resources by adding more infrastructure ie. more VMs storage etc.
-		Scale up/down - This refers to adding more resources to your in place infrastructure ie larger storage units
+	   Scale out/in - This refers to creating more resources by adding more infrastructure ie. more VMs storage etc.
+	   Scale up/down - This refers to adding more resources to your in place infrastructure ie larger storage units
 - What is the hierarchy for creating a resource in Azure?
 	A- The resource hierarchy for Azure resources is Subscription/ Resource Group/ Resource
 - What are the default entities Table Storage has?
