@@ -55,10 +55,10 @@ Questions to keep in mind -
 		Access Tier - Hot(immediate access), Cool(occasional access), Archive(rare access long-term)
 - Explain the types of Replication?
 	A- https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy
-		LRS(Locally-redundant storage) replication to 3 other units within the region
-		GRS(Geo-redundant storage) replication to a secondary region, includes LRS-like replication
-		ZRS(Zone-redundant storage) replication to up to 3 availability zones within the region
-		GZRS(Geo-zone-redundant storage) a combination of ZRS and GRS
+	   LRS(Locally-redundant storage) replication to 3 other units within the region
+	   GRS(Geo-redundant storage) replication to a secondary region, includes LRS-like replication
+	   ZRS(Zone-redundant storage) replication to up to 3 availability zones within the region
+	   GZRS(Geo-zone-redundant storage) a combination of ZRS and GRS
 - Types of Blob Storage?
 	A- 
 		Block Blob - Used for streaming workloads, each blob consists of a sequence of blocks, 200 GB per blob
@@ -79,8 +79,8 @@ Questions to keep in mind -
 - What is max size supported for Queue storage?
 	A- A queue storage account can support up to 500 TB, but each message can only be 64 KB
 - Does Queue Storage support first-in-first-out model? explain?
-	A- No, a message in queue storage only leaves when its condition is met or it is dequeued either
-	manually or an automated dequeue condition is met
+	A- No, a message in queue storage only leaves when its condition is met or it is dequeued either manually or an 
+	   automated dequeue condition is met
 - What are the Protocals followed by file storage?
 	A- Server Message Bus(SMB) for windows systems and REST/HTTP(File Rest api)
 - What is the Hierarchy of File storage?
