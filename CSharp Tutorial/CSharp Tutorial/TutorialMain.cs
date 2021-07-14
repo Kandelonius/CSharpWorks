@@ -6,8 +6,8 @@ namespace CSharp_Tutorial
     {
         static void Main(string[] args)
         {
-
-            
+            Delegate testdelegate = new Delegate();
+            testdelegate.CallLogic();
 
             Console.ReadKey();
 
