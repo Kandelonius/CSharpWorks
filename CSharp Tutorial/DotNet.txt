@@ -434,140 +434,62 @@ Struct In CSharp
     8-Struct will also behave same like class with some limitation.
 
 -------------------------16th June 2021------------------------------------------
-
-            int a = 1, b = 2, c = 3;
-
-            1,2,3,4,5,...1000.
-            int[] myNumbers = new int[] { 1, 2, 3, 4, 5, 6, 1000 };
-
-            1,"Sam",25,95000.00,'M'
-
-            Collection in C#
-            1-Non-Generic Collection Namespace:- System.Collections;
-            A-ArrayList B-SortedList C-HashTable D-Stack E-Queue
-
-            2-Generic Collection
-            A-List<T> B-Dictionary<Tkey,Tvalue> C-SortedList<Tkey,Tvalue>
-            D-HashSet<T> E-Stack<T> F-Queue<T>
-
-            A-ArrayList
-
-            IList collection = new ArrayList();
-            collection.Add(10);
-            collection.Add(100);
-            collection.Add(1000);
-
-
-            var arrayList = new ArrayList();
-            Console.WriteLine(arrayList.Capacity);4
-            arrayList.Add(1);            
-            arrayList.Add("Sam");
-            arrayList.Add(25);
-            arrayList.Add(95000.00);            
-            arrayList.Add('M');
-            arrayList.TrimToSize();
-
-
-            Console.WriteLine(arrayList[2]);25
-
-            arrayList.AddRange(collection);
-
-            Console.WriteLine(arrayList.Contains(10000));
-            arrayList.Insert(1, "Test");
-            Console.WriteLine(arrayList.IndexOf("Test"));
-            arrayList.InsertRange(0, collection);
-
-            arrayList.Remove("Test");
-            arrayList.RemoveAt(3);
-            arrayList.RemoveRange(0, 3);
-
-            Console.WriteLine("----------------");
-
-            for (int i = 0; i < arrayList.Count; i++)
-            {
-                Console.WriteLine(arrayList[i]);
-            }
-
-            Console.WriteLine("----------------");
-
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-
-            B-SortedList
-            1-Key should not be null.
-            2-Key should not be duplicate.
-            3-Value can be null as well as duplicate.
-            --Only for Sorted List
-            4-Key should of same data type.
-            
-
-            var sortList = new SortedList();
-            sortList.Add(1, "David");
-            sortList.Add(9, null);
-            sortList.Add(2, "David");
-            sortList.Add(8, "Kevin");
-            sortList.Add(3, null);
-
-            Console.WriteLine(sortList[8]);
-
-            foreach (var key in sortList.Keys)
-            {
-                Console.WriteLine("Key is:"+key +" value is:"+ sortList[key]);
-            }
-
-            C - HashTable
-
-            var hashList = new Hashtable();
-            hashList.Add(1, "David");
-            hashList.Add("Anthony", null);
-            hashList.Add(2, "David");
-            hashList.Add(8, "Kevin");
-            hashList.Add("Divya", null);
-
-            foreach (var key in hashList.Keys)
-            {
-                Console.WriteLine("Key is:" + key + " value is:" + hashList[key]);
-            }
-
-            D-Stack LIFO - Last in First out
-
-            var stackList = new Stack();
-            stackList.Push(1);
-            stackList.Push("Sam");
-            stackList.Push(25);
-            stackList.Push(95000.00);
-            stackList.Push('M');
-
-            Console.WriteLine(stackList.Peek());M
-            Console.WriteLine("-------------------");
-            Console.WriteLine(stackList.Pop());M
-            Console.WriteLine("--------------------");
-
-            foreach (var item in stackList)
-            {
-                Console.WriteLine(item);
-            }
-
-            E-Queue FIFO First in First out
-
-            var queueList = new Queue();
-            queueList.Enqueue(1);
-            queueList.Enqueue("Sam");
-            queueList.Enqueue(25);
-            queueList.Enqueue(95000.00);
-            queueList.Enqueue('M');
-
-
-            Console.WriteLine(queueList.Peek());1
-            Console.WriteLine("-------------------");
-            Console.WriteLine(queueList.Dequeue());1
-            Console.WriteLine("--------------------");
-
-
-            foreach (var item in queueList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.ReadKey();
+     Collection in C#
+     1-Non-Generic Collection Namespace:- System.Collections;
+     A-ArrayList B-SortedList C-HashTable D-Stack E-Queue
+    
+     2-Generic Collection
+     A-List<T> B-Dictionary<Tkey,Tvalue> C-SortedList<Tkey,Tvalue>
+     D-HashSet<T> E-Stack<T> F-Queue<T>
+    
+     A-ArrayList
+    
+     var arrayList = new ArrayList();
+     Console.WriteLine(arrayList.Capacity);4
+     arrayList.Add(1);            
+     arrayList.Add("Sam");
+     arrayList.Add(25);
+     arrayList.Add(95000.00);            
+     arrayList.Add('M');
+     arrayList.TrimToSize();
+    
+     B-SortedList
+     1-Key should not be null.
+     2-Key should not be duplicate.
+     3-Value can be null as well as duplicate.
+     --Only for Sorted List
+     4-Key should of same data type.
+    
+     var sortList = new SortedList();
+     sortList.Add(1, "David");
+     sortList.Add(9, null);
+     sortList.Add(2, "David");
+     sortList.Add(8, "Kevin");
+     sortList.Add(3, null);
+    
+     C - HashTable
+    
+     var hashList = new Hashtable();
+     hashList.Add(1, "David");
+     hashList.Add("Anthony", null);
+     hashList.Add(2, "David");
+     hashList.Add(8, "Kevin");
+     hashList.Add("Divya", null);
+    
+     D-Stack LIFO - Last in First out
+    
+     var stackList = new Stack();
+     stackList.Push(1);
+     stackList.Push("Sam");
+     stackList.Push(25);
+     stackList.Push(95000.00);
+     stackList.Push('M');
+    
+     E-Queue FIFO First in First out
+    
+     var queueList = new Queue();
+     queueList.Enqueue(1);
+     queueList.Enqueue("Sam");
+     queueList.Enqueue(25);
+     queueList.Enqueue(95000.00);
+     queueList.Enqueue('M');
