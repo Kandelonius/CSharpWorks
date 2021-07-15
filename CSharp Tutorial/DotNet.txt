@@ -434,62 +434,62 @@ Struct In CSharp
     8-Struct will also behave same like class with some limitation.
 
 -------------------------16th June 2021------------------------------------------
-     Collection in C#
-     1-Non-Generic Collection Namespace:- System.Collections;
-     A-ArrayList B-SortedList C-HashTable D-Stack E-Queue
-    
-     2-Generic Collection
-     A-List<T> B-Dictionary<Tkey,Tvalue> C-SortedList<Tkey,Tvalue>
-     D-HashSet<T> E-Stack<T> F-Queue<T>
-    
-     A-ArrayList
-    
-     var arrayList = new ArrayList();
-     Console.WriteLine(arrayList.Capacity);4
-     arrayList.Add(1);            
-     arrayList.Add("Sam");
-     arrayList.Add(25);
-     arrayList.Add(95000.00);            
-     arrayList.Add('M');
-     arrayList.TrimToSize();
-    
-     B-SortedList
-     1-Key should not be null.
-     2-Key should not be duplicate.
-     3-Value can be null as well as duplicate.
-     --Only for Sorted List
-     4-Key should of same data type.
-    
-     var sortList = new SortedList();
-     sortList.Add(1, "David");
-     sortList.Add(9, null);
-     sortList.Add(2, "David");
-     sortList.Add(8, "Kevin");
-     sortList.Add(3, null);
-    
-     C - HashTable
-    
-     var hashList = new Hashtable();
-     hashList.Add(1, "David");
-     hashList.Add("Anthony", null);
-     hashList.Add(2, "David");
-     hashList.Add(8, "Kevin");
-     hashList.Add("Divya", null);
-    
-     D-Stack LIFO - Last in First out
-    
-     var stackList = new Stack();
-     stackList.Push(1);
-     stackList.Push("Sam");
-     stackList.Push(25);
-     stackList.Push(95000.00);
-     stackList.Push('M');
-    
-     E-Queue FIFO First in First out
-    
-     var queueList = new Queue();
-     queueList.Enqueue(1);
-     queueList.Enqueue("Sam");
-     queueList.Enqueue(25);
-     queueList.Enqueue(95000.00);
-     queueList.Enqueue('M');
+    Collection in C#
+    1-Non-Generic Collection Namespace:- System.Collections;
+    A-ArrayList B-SortedList C-HashTable D-Stack E-Queue
+   
+    2-Generic Collection
+    A-List<T> B-Dictionary<Tkey,Tvalue> C-SortedList<Tkey,Tvalue>
+    D-HashSet<T> E-Stack<T> F-Queue<T>
+   
+    A-ArrayList
+   
+    var arrayList = new ArrayList();
+    Console.WriteLine(arrayList.Capacity);4
+    arrayList.Add(1);            
+    arrayList.Add("Sam");
+    arrayList.Add(25);
+    arrayList.Add(95000.00);            
+    arrayList.Add('M');
+    arrayList.TrimToSize();
+   
+    B-SortedList
+    1-Key should not be null.
+    2-Key should not be duplicate.
+    3-Value can be null as well as duplicate.
+    --Only for Sorted List
+    4-Key should of same data type.
+   
+    var sortList = new SortedList();
+    sortList.Add(1, "David");
+    sortList.Add(9, null);
+    sortList.Add(2, "David");
+    sortList.Add(8, "Kevin");
+    sortList.Add(3, null);
+   
+    C - HashTable
+   
+    var hashList = new Hashtable();
+    hashList.Add(1, "David");
+    hashList.Add("Anthony", null);
+    hashList.Add(2, "David");
+    hashList.Add(8, "Kevin");
+    hashList.Add("Divya", null);
+   
+    D-Stack LIFO - Last in First out
+   
+    var stackList = new Stack();
+    stackList.Push(1);
+    stackList.Push("Sam");
+    stackList.Push(25);
+    stackList.Push(95000.00);
+    stackList.Push('M');
+   
+    E-Queue FIFO First in First out
+   
+    var queueList = new Queue();
+    queueList.Enqueue(1);
+    queueList.Enqueue("Sam");
+    queueList.Enqueue(25);
+    queueList.Enqueue(95000.00);
+    queueList.Enqueue('M');
