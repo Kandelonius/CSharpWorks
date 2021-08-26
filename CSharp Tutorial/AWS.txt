@@ -1,0 +1,13 @@
+Storage-
+1. Simple Storage Service(S3) - Object storage
+	Universal namespace
+	Features:
+		Tiered Storage
+		Lifecycle Management
+		Versioning
+		Encryption
+		Multifactor Authentication(MFA) delete
+		Security via ACL and bucket policy
+
+2. Elastic Block Storage(EBS) - Volumes -> hard disk
+3. Elastic File System(EFS) - shared file system
