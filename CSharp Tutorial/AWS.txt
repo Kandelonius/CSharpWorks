@@ -8,6 +8,12 @@ Storage-
 		Encryption
 		Multifactor Authentication(MFA) delete
 		Security via ACL and bucket policy
-
+	Bucket Creation:
+		Create a unique bucket name
+		Choose a useful region
+		Create Bucket then configure
+	S3 Security
+		Encryption
+		SSL Certificates
 2. Elastic Block Storage(EBS) - Volumes -> hard disk
 3. Elastic File System(EFS) - shared file system
