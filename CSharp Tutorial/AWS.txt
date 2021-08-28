@@ -17,3 +17,7 @@ Storage-
 		SSL Certificates
 2. Elastic Block Storage(EBS) - Volumes -> hard disk
 3. Elastic File System(EFS) - shared file system
+4. Elastic Compute Cloud(EC2 / VM):
+	SSH Keys
+	Private Key
+	Public Key
