@@ -1,3 +1,48 @@
+Q. What are the consideration when creating an S3 bucket?
+A. The most important things to consider the name and the region. The region must be the same as the 
+	services that will be attached to the S3 bucket.
+Q. What type of storage is S3?
+A. S3 stores objects
+Q. How to protect data at rest in S3 bucket?
+A. To protect data at rest there is server side encryption and client side encryption. Server side 
+	encrypts the data at the AWS center and client side encrypts at the user location.
+Q. Explain S3 versioning
+A. S3 versioning allows you to refer or revert back to previous versions of the bucket or the contents 
+	of the bucket. You can retrieve deleted or corrupted items as long as they were part of a previous version.
+Q. What is S3 multipart upload?
+A. Multipart upload is useful for large objects(100 MB+) it allows you to upload objects in parts and in any order. 
+	Any failed segments will be reattempted until successful. This option is best for large objects and use on 
+	unreliable networks.
+Q. Explain Lifecycle Policy in S3?
+A. Lifecycle Policy allows you to define how data is stored and accessed based on predefined criteria. You can 
+	choose to keep certain data available for real-time access for periods where you know it'll be frequently 
+	accessed and then archive it later when it won't be as in demand. You can also set rules for when and how 
+	to delete expired data.
+Q. Explain Object Lock feature in AWS S3?
+A. Object lock allows for Write Once Read Many time(WORM) access to information. This prevents data from being 
+	altered or deleted after it is created. It can be enabled and disabled upon creation of the bucket.
+Q. What is Static Website Hosting in S3?
+A. Static web hosting allows you to use a S3 bucket to host a static webpage. Static webpages cannot change 
+	dynamically but may contain client-side scripts.
+Q. What is a object URL?
+A. A url somebody can use to access a hosted object. They are defaulted as private allowing only the owner 
+	permission but the owner may grant permissions for others to download the contents.
+Q. Explain Elastic Block Storage?
+A. Elastic Block Storage(EBS) behave like raw unformatted block devices which you can mount as devices on 
+	your instances. They persist independently from the instance they are mounted to and are best used for 
+	data you need long term access to.
+Q. What is the difference between terminating and stopping an EC2 instance?
+A. Terminating  an EC2 instance destroys it and it so you would have to create a new one to use it, whereas 
+	stopping it allows you to start the same one again and retain whatever information has been stored
+Q. How To Connect To Your Amazon Ec2 Instance?
+A. You can connect to a Linux EC2 using a program like PuTTY to configure your SSH key and connect via the 
+	IPv4 address. You connect to a Windows instance using RDP from a windows computer.
+Q. What Is Amazon Machine Image (ami)?
+A. AMI is a way to store AWS resource settings so that you can launch multiple identical instances without 
+	having to manually configure them.
+Q. What Is Public Key Credentials?
+A. 
+
 Storage-
 1. Simple Storage Service(S3) - Object storage
 	Universal namespace
