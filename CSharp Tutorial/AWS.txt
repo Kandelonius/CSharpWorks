@@ -78,39 +78,58 @@ A. Yes Peered VPC can originate in different regions.
 Q. What is the role of AWS CloudTrail?
 A. CloudTrail allows you to monitor activity across your AWS account as well as provide event history.
 Q. Explain Amazon ElasticCache
-A. 
+A. Allow you to set-up, run and scale open-source compatible in-memory data stores in the cloud. Is good for 
+	data intensive apps that require high throughput with low latency real-time analytics.
 Q. Name the AWS service exists only to redundantly cache data and images?
-A. 
+A. CloudFront uses edge locations to ensure a user has the quickest access to data by caching data and images 
+	where they are requested.
 Q. How to connect EBS volume to multiple instances?
-A. 
+A. You can use EBS Multi-Attach to connect multiple volumes as long as they all have Multi-Attach enabled and 
+	are in the same Availability Zone.
 Q. What are the different types of Load Balancer in AWS services?
-A. 
+A. There are: Application at the application layer(http/https). Network at the transport layer(tcp/ssl). Classic 
+	is a combination of Application and network. Gateway at the third layer of the Open Systems Interconnection(OSI), 
+	the network layer.
 Q. What is the use of lifecycle hooks in Autoscaling?
-A. 
+A. Lifecycle hooks are what track custom events which can determine when/if a service should scale.
 Q. Name some of the DB engines which can be used in AWS RDS
-A. 
+A. PostgresQL, MySQL Amazon Aurora, Oracle and more.
 Q. What is VPC peering connection?
-A. 
+A. A networking connection between two VPCs which enables you to route traffic between them using IPv4 or IPv6
 Q. What are NAT Gateways?
-A. 
+A. Network Address Translation(NAT) Gateway enhances security allowing a instances in a private subnet to connect 
+	to services outside your VPC without allowing external services to connect to them.
 Q. What is SNS?
-A. 
+A. Simple Notification Service allows for messaging for application to application(A2A) and application to person(A2P). 
+	Facilitates microservices and event driven serverless applications as well as enables A2P communications via SMS and email.
 Q. Differences between Security group and Network access control list?
-A. 
+A. A security group is assigned either when launching an instance or later and you are only allowed to set rules to allow 
+	certain traffic. NACLs can specify both allow and deny rules, you can do things like allow certain IP addresses which 
+	is useful for preventing DDOS attacks.
 Q. Differences between horizontal scaling and vertical scaling?
-A. 
+A. Horizontal scaling(Scale up/down) is used when you want to do things such as create larger hard-drives or use higher 
+	capacity RAM. Vertical scaling(Scale in/out) is used to add more hard-drives or add an additional server.
 Q. Explain what EC2 instance metadata is.
-A. 
-Q. What are some differences betweenECS, and Fargate?
-A. 
+A. Data about the specific EC2 instance such as how much activity does it have and what is the host name or security group.
+Q. What are some differences between ECS, and Fargate?
+A. EC2 are a fleet of instances which gives greater control over the customization of the environment. Fargate allows you 
+	to focus on developing and maintaining your applications with the underlying servers abstracted.
 Q. Explain the S3 consistency model.
-A. 
+A. Strong read-after-write consistency for PUTs and DELETEs of objects in AWS S3 buckets in all Regions. Applies to 
+	writes to new objects as well as PUTs that overwrite existing objects and DELETEs.
 Q. What are the key capabilities provided by AWS IAM?
-A. 
+A. Enables you to manage access to AWS services and resources securely by allowing you to create AWS users and groups 
+	to allow or deny access. Identity and Access Management allows for multi-factor authentication requiring a user to 
+	demonstrate identity in more than one way, Fine-grained access control allows you to add specific conditions such 
+	as time of day or originating IP address. Analyze Access to validate that your policies only provide the intended 
+	public and cross-account access to your resources. Integrate with another directory connect AWS to another identity 
+	system such as Microsoft AD.
 Q. What are the different identities provided by IAM?
-A. 
+A. Users represent a person or service that will interact with AWS, user groups a collection of users with similar 
+	permissions and roles which are similar to users but they cannot have any credentials ie. passwords or access keys
 Q. What is an Instance Store Volume and an EBS Volume?
-A. 
+A. Instance Store Volume is stored on the actual instance and is lost if the instance is reset. EBS volume is a 
+	replication on hardware within the Availability Zone for fault tolerance, and is not lost if the EC2 is reset.
 Q. What is Cognito service
 A. 
 Q. If I want my instance to run on a single-tenant hardware, which value do I have to set the instance’s tenancy 
