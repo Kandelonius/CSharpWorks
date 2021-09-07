@@ -131,43 +131,48 @@ Q. What is an Instance Store Volume and an EBS Volume?
 A. Instance Store Volume is stored on the actual instance and is lost if the instance is reset. EBS volume is a 
 	replication on hardware within the Availability Zone for fault tolerance, and is not lost if the EC2 is reset.
 Q. What is Cognito service
-A. 
+A. A service that allows users to be authenticated through other entities such as Google or Github.
 Q. If I want my instance to run on a single-tenant hardware, which value do I have to set the instance’s tenancy 
 	attribute to?
-A. 
-Q. Another scenario based interview question. You need to configure an Amazon S3 bucket to serve static assets 
-	for your public-facing web application. What permission need to be set?
-A. 
+A. Dedicated
+Q.  You need to configure an Amazon S3 bucket to serve static assets for your public-facing web application. 
+	What permission need to be set?
+A. You must allow for port 80 for non-secure connections  and port 443 for SSL encrypted connection.
 Q. When you need to move data over long distances using the internet, for instance across countries or continents 
 	to your Amazon S3 bucket, which method or service will you use?
-A. 
+A. Amazon S3 Transfer Acceleration allows quick transfer regardless of distance or varying internet weather.
 Q. Why do you create subnets?
 A. To limit accessibility to certain resources based on the needs of the organization.
 Q. How is Amazon RDS, DynamoDB different?
 A. RDS isn't a specific database service instead it's a service that allows you to launch a database on AWS. 
 	DynamoDB is a fully managed database for unstructured data. 
 Q. Can I run more than one DB instance for Amazon RDS for free?
-A. 
+A. You are not limited by the DB instances but the total time the instances are up and the amount of data being stored.
 Q. Provide some use cases suitable for Amazon DynamoDB
-A. 
+A. Used for key-value and document database for mobile, web, gaming, ad tech and IoT. Used by Lyft, Airbnb and Redfin. 
+	Good for performance based applications.
 Q. What is the actual definition of the term “VPC”?
-A. 
+A. Virtual Private Cloud, it's a virtual network.
 Q. What are Internet Gateways in VPC?
-A. 
+A. Horizontally scaled, redundant, and highly available component that allows communication between VPC and the internet.
 Q. What is a NAT Device?
-A. 
+A. Network Address Translation devices all instances in private subnets to connect to the internet, other VPCs, or on-prem 
+	networks. They can communicate with services outside the VPC but don't receive unsolicited connection requests.
 Q. What is the default VPC? Explain its advantages.
-A. 
+A. Each AWS account gets a default VPC in each region of AWS which allows you to quickly and easily set up EC2 instances. 
+	It is ready to go and doesn't need to be configured by the user.
 Q. What do you know about VPC Peering?
-A. 
+A. VPC Peering allows different VPCs to communicate using private IP even across different regions.
 Q. What are Security Groups in VPC?
-A. 
-Q. What do you mean by Network ACLs (Access Control List) in VPC?
-A. 
+A. Collections of users or services that share similar accesses to resources. An example is an HR security group would be 
+	a collection of HR professionals and managers who need access to employee information.
+Q. What is meant by network access control list(ACL) in VPC?
+A. It is an additional layer of security that acts as a firewall for controlling traffic in and out of one or more subnets.
 Q. Can You Monitor The Network Traffic In Your Vpc?
-A. 
+A. Yes using Flow logs for information about IP traffic as well as CloudWatch to monitor NAT gateways.
 Q. How Do You Specify Which Availability Zone My Amazon Ec2 Instances Are Launched In?
-A. 
+A. In the  EC2 dashboard for your EC2 instance navigate to the Health section, view the list of AZs under Availability Zone 
+	status and select the desired zone.
 
 Storage-
 1. Simple Storage Service(S3) - Object storage
