@@ -67,15 +67,16 @@ A. These services allow you to prevent data loss if an EC2 instance is stopped. 
 	block-level storage and is good for information that changes frequently. EBS volumes are automatically replicated 
 	within its Availability zone and is low-latency for high performance workloads.
 Q. What are Recovery Time Objective and Recovery Point Objective in AWS?
-A. 
+A. Recovery Time Objective is the amount of downtime a business can tolerate. Recovery Point Objective is how frequently 
+	backups are created.
 Q. Can you change the Private IP Address of an EC2 instance while it is running or in a stopped state?
-A. 
+A. Private IP addresses cannot be changed but public addresses can under certain circumstances.
 Q. What are the advantages of auto-scaling?
 A. Auto-scaling allows you to automate services if they exceed capacity without human intervention.
 Q. Can you establish a Peering connection to a VPC in a different region?
-A. 
+A. Yes Peered VPC can originate in different regions.
 Q. What is the role of AWS CloudTrail?
-A. 
+A. CloudTrail allows you to monitor activity across your AWS account as well as provide event history.
 Q. Explain Amazon ElasticCache
 A. 
 Q. Name the AWS service exists only to redundantly cache data and images?
@@ -124,7 +125,8 @@ A.
 Q. Why do you create subnets?
 A. To limit accessibility to certain resources based on the needs of the organization.
 Q. How is Amazon RDS, DynamoDB different?
-A. 
+A. RDS isn't a specific database service instead it's a service that allows you to launch a database on AWS. 
+	DynamoDB is a fully managed database for unstructured data. 
 Q. Can I run more than one DB instance for Amazon RDS for free?
 A. 
 Q. Provide some use cases suitable for Amazon DynamoDB
