@@ -107,7 +107,12 @@ Questions to keep in mind -
     A- an inheriting class can inherit multiple interfaces but only one abstract class, abstract class are more suited to
        defining properties and things that are fully utilized by all inheriting classes whereas interfaces are better for 
        methods that might not all be used
-
+     - Interfaces are  contracts where a class must utilize its properties/methods whereas abstracts are classes that cannot 
+       be instantiated but can contain definitions
+-Which keyword is used to refer baseclass constructor to subclass constructor?
+    A- base: The base keyword is used to access members of the base class from within a derived class 
+-What is IEnumerable?
+    A- the base interface for all non-generic collections that can be enumerated
 
 C#,.NET Framework,ASP.NET,ASP.NET MVC,ASP.NET Core - Web Application - Goal
 
